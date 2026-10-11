@@ -1,0 +1,15 @@
+{
+  "name": "@red-cup-engineering/software-solve-loop-service",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/solve-loop.mjs",
+    "./resolvers": "./src/resolvers.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
