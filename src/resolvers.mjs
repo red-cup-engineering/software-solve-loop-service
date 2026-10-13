@@ -6,7 +6,7 @@
 // A resolver is: { name, match({task}) -> bool, attempt({task, workdir}) -> result }
 //   result: { patch } (loop applies it) | { mutated: true } (already changed the tree) | null
 
-import { runCommand } from "@red-cup-engineering/javascript-node-services-section/run-sandboxed-command";
+// Command execution is an optional dependency, loaded only for the matching autofix resolver.
 
 // Try resolvers in order; return the first whose match() is true (regardless of whether its
 // attempt succeeds — matching claims the class). Callers apply/test the returned attempt.
@@ -23,10 +23,12 @@ export function autofixResolver({ name = "repo-autofix", command, matches = () =
   return {
     name,
     match: ({ task }) => Boolean(matches(task)),
-    attempt: ({ workdir }) => {
+    attempt: async ({ workdir }) => {
       if (!command) return null;
-      const r = runCommand(command, { cwd: workdir });
-      return r.code === 0 ? { mutated: true } : null;
+      const { runCommand } = await import("@red-cup-engineering/javascript-node-services-section/run-sandboxed-command");
+      const r = await runCommand(command, { cwd: workdir });
+      if (r.code !== 0) throw new Error("autofix failed without verified workspace restoration");
+      return { mutated: true };
     },
   };
 }
