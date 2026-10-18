@@ -1,6 +1,11 @@
 {
   "name": "@red-cup-engineering/software-solve-loop-service",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-code-engineering-services-section.git",
+    "directory": "services/computer-code-development-services-section/services/software-solve-loop-service"
+  },
   "type": "module",
   "exports": {
     ".": "./src/solve-loop.mjs",
