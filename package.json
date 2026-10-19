@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/software-solve-loop-service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/computer-code-engineering-services-section.git",
@@ -12,7 +12,7 @@
     "./resolvers": "./src/resolvers.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/javascript-node-services-section": "workspace:*"
+    "@red-cup-engineering/javascript-node-services-section": "0.4.1"
   },
   "scripts": {
     "test": "node --test"
