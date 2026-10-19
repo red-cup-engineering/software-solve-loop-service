@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/computer-code-engineering-services-section.git",
-    "directory": "services/computer-code-development-services-section/services/software-solve-loop-service"
+    "url": "git+https://github.com/red-cup-engineering/software-solve-loop-service.git"
   },
   "type": "module",
   "exports": {
