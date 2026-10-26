@@ -1,0 +1,69 @@
+{
+  "scope": "Historical independent and coordinator source checks; diagnostic packed-source receiving before immutable Craft publication. These are distinct runs, not a combined installed-release result.",
+  "files": {
+    "independent/initial-effects.tap": {
+      "sha256": "4720e02932c2078e7c0cefddeecc5b95d82ee65c770c40851e5a7419496a63af",
+      "bytes": 2592
+    },
+    "independent/initial-evidence.tap": {
+      "sha256": "98f46f27380eb1cffe6aad2d0356cd5e6216f3a19dc339edfded238db04b44eb",
+      "bytes": 1559
+    },
+    "independent/initial-retention.tap": {
+      "sha256": "25d204914c24e340fb6b2ca4813f432047268169ad28b9bce4d4d02bbc443282",
+      "bytes": 1809
+    },
+    "independent/corrected-eight.tap": {
+      "sha256": "39947846ca9eed4cc274d68071f76c26f59f446eaad63b28e267e75ea751b27d",
+      "bytes": 2032
+    },
+    "independent/corrected-exceptions.tap": {
+      "sha256": "3704d6c9d42adbcf3634437aa2dbc8f1d0317ebe8f3f1f75821374a7f5450f9f",
+      "bytes": 3157
+    },
+    "independent/final-boundaries.tap": {
+      "sha256": "a6c44662fcd9f24fe356a614e0ff45b717e411b5040f3377efb548eff9365537",
+      "bytes": 1292
+    },
+    "independent/initial-files.json": {
+      "sha256": "91771f9bb8accb97f9dd72a78fb6c72dacfa2f3dbfcb969a2a87e060c122ac80",
+      "bytes": 636
+    },
+    "independent/corrected-files.json": {
+      "sha256": "1da28b52d2c599e62e48499dc9dfe327b6d317a0ece5304bb7e2d3b35cfc86cc",
+      "bytes": 636
+    },
+    "independent/final-corrected-files.json": {
+      "sha256": "e95790d7e53b57def7ee2eccdd1b0da2cb5e6274df7eef4a32e8527a56acab47",
+      "bytes": 636
+    },
+    "coordinator/selection-before.tap": {
+      "sha256": "326e29885cdd4bae3b02875c5ad36e6ab8b50285d9e8a0d07604eb4571ed64a0",
+      "bytes": 957
+    },
+    "coordinator/selection-after.tap": {
+      "sha256": "50a623af505c89ac9a512f9aa427dce9cd71a8b31a3e49b965569290a9b6244c",
+      "bytes": 356
+    },
+    "coordinator/preissue-native.tap": {
+      "sha256": "6a251586517d1523a23921e23d97c73c714e8dbd07002583a8bea78d12277d63",
+      "bytes": 7544
+    },
+    "coordinator/preissue-selection.json": {
+      "sha256": "72c6fb2877d150ede23e9e549cfcf256629e4993c39092ac461bed01e5b79620",
+      "bytes": 1100
+    },
+    "upstream-publication/runtime-availability.json": {
+      "sha256": "29fdf20ced26e67ed82f85905cc4cf61c211793b97b4b7d7bac69a75f350682a",
+      "bytes": 58115
+    },
+    "upstream-publication/publication-readiness.json": {
+      "sha256": "f5a117cff6084e1c06171ad1602b183a38a8da15f4eb632baaf780ac464f1c50",
+      "bytes": 6568
+    },
+    "upstream-publication/observed-artifacts-172451.json": {
+      "sha256": "ed2699c4814918f471c817f9ca39018ba75e2bf70e5a15bbd24a65de5f5fd0c2",
+      "bytes": 661
+    }
+  }
+}

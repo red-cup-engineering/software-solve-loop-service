@@ -1,0 +1,15 @@
+# Exact recently published supplier editions received for this source candidate.
+# Keep the normal release-age policy for every other package and version.
+minimumReleaseAgeExclude:
+  # House releases have no artificial age delay (Leader correction, 2026-10-20; 2026-10-26).
+  - '@561-group/*'
+  - '@causeway-services/*'
+  - '@coesite-operations/*'
+  - '@emsenn/*'
+  - '@emsweb/*'
+  - '@harmonious-union/*'
+  - '@koios-news/*'
+  - '@lenticule-science/*'
+  - '@red-cup-engineering/*'
+  - '@red-cup-science/*'
+  - '@rsc-quiescent/*'

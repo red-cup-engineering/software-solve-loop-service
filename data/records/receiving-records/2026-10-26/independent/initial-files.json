@@ -1,0 +1,22 @@
+[
+  {
+    "path": "src/solve-loop.mjs",
+    "sha256": "2d275f3f084c24e0f3b705d5e948972cd0ecb50e7906d9f3d251cb2e7c40e2b9"
+  },
+  {
+    "path": "src/evidence.mjs",
+    "sha256": "c2acd115b55f38e0b41672364d160228d1e4cc1041333dbfd77b543901420a4e"
+  },
+  {
+    "path": "src/resolvers.mjs",
+    "sha256": "96cc2fd907c93ba4191b82ce693080dca91f4f0e62e3466a43417e88a685ea31"
+  },
+  {
+    "path": "specifications/requirement-settlement.md",
+    "sha256": "b0a38355c689f6082c44f69a44a9ae156127eeaea64f69c8e6b80de10f3ae3d0"
+  },
+  {
+    "path": "package.json",
+    "sha256": "70fb7d5e39f973b518c78e3a07999ff964e811947fa3d59aa640c0bf09a9aec4"
+  }
+]

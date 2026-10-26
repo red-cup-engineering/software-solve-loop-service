@@ -1,0 +1,17 @@
+✓ Lockfile passes supply-chain policies (verified 3m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +121
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /workspace/scratch/10adc8949912/signcraft-effects/qualification/pnpm-store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 121, reused 77, downloaded 44, added 121, done
+
+dependencies:
++ @red-cup-engineering/javascript-node-services-section 0.4.1
++ @red-cup-engineering/signcraft 0.6.1-dev.495
+
+devDependencies: skipped
+
+Done in 2.1s using pnpm v11.28.5

@@ -1,0 +1,64 @@
+{
+  "kind": "native-packed-solve-loop-supplier-receiving",
+  "node": "v24.22.1",
+  "pnpm": "11.28.5",
+  "packages": 121,
+  "providerSelection": "separate actual packed candidate installation; offline/frozen from the original native store, with exact source lock copied as a qualification input",
+  "lockSha256": "f31b132fee0b138c64e95326c4aa932b8e2b7fccb5b5e3c2fe4e60ba745d9e63",
+  "providers": [
+    {
+      "name": "@red-cup-engineering/javascript-node-services-section",
+      "version": "0.4.1",
+      "gitHead": "fc1832ad8350068cdd0246b86b7b174371349ba1",
+      "entry": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.4.1/node_modules/@red-cup-engineering/javascript-node-services-section/scripts/run-sandboxed-command.mjs",
+      "packageRoot": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.4.1/node_modules/@red-cup-engineering/javascript-node-services-section",
+      "entryGitBlob": "a37a9aa3bbaedae1bc7d85a49f66def06f1e2b89",
+      "entrySha256": "f31907b14d32582ba1b6757b048d70c23e5477a588e59df93b0469738fef8f95"
+    },
+    {
+      "name": "@red-cup-engineering/signcraft",
+      "version": "0.6.1-dev.495",
+      "gitHead": "1bb1a43ffe2df068f34ae7455c7540e9a76fc706",
+      "entry": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signcraft@0.6.1-dev.495/node_modules/@red-cup-engineering/signcraft/src/cell.mjs",
+      "packageRoot": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signcraft@0.6.1-dev.495/node_modules/@red-cup-engineering/signcraft",
+      "entryGitBlob": "40d7d947430ad944f9baa2172c34cfceb1abdd41",
+      "entrySha256": "e10cc0bc8461d0c7e0edd5a3291458742c19923703a100745421e8f5e77c3d4f"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.13.1-dev.185",
+      "gitHead": "8c3a38f406c01688520459a253215d22a25d0dd1",
+      "entry": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signcell@0.13.1-dev.185/node_modules/@red-cup-engineering/signcell/src/cell.mjs",
+      "packageRoot": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signcell@0.13.1-dev.185/node_modules/@red-cup-engineering/signcell",
+      "entryGitBlob": "d2964fb4819ec7e557a47d64b1ba14d923224ee1",
+      "entrySha256": "dad6785a13de3a11f893e18c23853993a61805916c2fd400ad6962d6a364b156"
+    },
+    {
+      "name": "@red-cup-engineering/signchain",
+      "version": "0.4.2-dev.64",
+      "gitHead": "38c4c4b2855e9c44641a7ebf867b4420b42f6b43",
+      "entry": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signchain@0.4.2-dev.64/node_modules/@red-cup-engineering/signchain/src/log.mjs",
+      "packageRoot": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signchain@0.4.2-dev.64/node_modules/@red-cup-engineering/signchain",
+      "entryGitBlob": "7eb975dc2237643acbd5d2dca50500665dfefc22",
+      "entrySha256": "a1469eb03a4e4992c3ae121b04356a0d5934912ac0391f09ba93bbb261f095f5"
+    },
+    {
+      "name": "@red-cup-engineering/signgraph",
+      "version": "0.7.1-dev.353",
+      "gitHead": "7e67715a86099b699f3e905f657c73d4fe6243ee",
+      "entry": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signgraph@0.7.1-dev.353/node_modules/@red-cup-engineering/signgraph/src/valuation.mjs",
+      "packageRoot": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+signgraph@0.7.1-dev.353/node_modules/@red-cup-engineering/signgraph",
+      "entryGitBlob": "fb968b7af05548ad20eca7c70bfe172bfb75aa53",
+      "entrySha256": "3e9dcd91f5568863c228fd0d75c62aa6798070a163d37edbd3976710a1c1c190"
+    },
+    {
+      "name": "@red-cup-engineering/metrologic",
+      "version": "0.14.3-dev.1325",
+      "gitHead": "16f979443b613584781a7f8362a31b754c68e7f9",
+      "entry": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+metrologic@0.14.3-dev.1325/node_modules/@red-cup-engineering/metrologic/src/closure/formal-context.mjs",
+      "packageRoot": "/workspace/scratch/10adc8949912/software-solve-loop-evidence/final-package/unpacked/package/node_modules/.pnpm/@red-cup-engineering+metrologic@0.14.3-dev.1325/node_modules/@red-cup-engineering/metrologic",
+      "entryGitBlob": "5624763f52f3d0cc5313e1e0bce600907276f946",
+      "entrySha256": "ff8785cbbd08b0d57184125affbf08bea3f03d8f03ec1158333da0abba822495"
+    }
+  ]
+}

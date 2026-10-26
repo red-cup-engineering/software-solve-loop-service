@@ -19,16 +19,20 @@ export function selectResolver(resolvers, task) {
 
 // Example real resolver: run the repo's own autofix (formatter/linter) and let the change
 // stand if it exists. Deterministic, no model. Demonstrates the script-first path.
-export function autofixResolver({ name = "repo-autofix", command, matches = () => false } = {}) {
+export function autofixResolver({ name = "repo-autofix", command, matches = () => false,
+  observeCandidate, rollback } = {}) {
   return {
     name,
     match: ({ task }) => Boolean(matches(task)),
     attempt: async ({ workdir }) => {
       if (!command) return null;
+      if (typeof observeCandidate !== "function" || typeof rollback !== "function")
+        throw new TypeError("autofix requires source observation and verified rollback providers before execution");
       const { runCommand } = await import("@red-cup-engineering/javascript-node-services-section/run-sandboxed-command");
       const r = await runCommand(command, { cwd: workdir });
       if (r.code !== 0) throw new Error("autofix failed without verified workspace restoration");
-      return { mutated: true };
+      return { mutated: true, candidate: await observeCandidate(workdir),
+        rollback: () => rollback(workdir) };
     },
   };
 }

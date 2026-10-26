@@ -1,0 +1,14 @@
+{
+  "scope": "Diagnostic selected-import run before Craft issuance; actual locally packed Craft candidate with native issued suppliers; not declared-manifest installation.",
+  "craftSourceCommit": "1bb1a43ffe2df068f34ae7455c7540e9a76fc706",
+  "craftSelectedPath": "/workspace/scratch/10adc8949912/signcraft-effects/qualification/combined-release/pnpm-receiving/package",
+  "files": {
+    "src/solve-loop.mjs": "a89338af8bbd465a894660887a95246b93c268614ad89debfc4f8bdd65f2b731",
+    "src/evidence.mjs": "05013a8982cab3ba88a288b3c55a5a68fa6c44ebd69a5252cf56864559d840b0",
+    "src/resolvers.mjs": "96cc2fd907c93ba4191b82ce693080dca91f4f0e62e3466a43417e88a685ea31",
+    "test/requirement-evidence.test.mjs": "766350c2496108890d2481397699614991578a378a5a2533446aed921c9d66a0",
+    "test/solve-loop.test.mjs": "24bd940428258cfd88bc48ef7d5621660096cc27facb6c1f87a3a0a6e45c930d",
+    "test/local-source-receiving.test.mjs": "533ea6a7680bed19403fa0758dd047a362102d3abbbc414e75a4decb770bfda2",
+    "test/receiving-boundaries.test.mjs": "c80060d97221f41ade1f1e4349cd36742fadd6be83c42254d314a2fce144db27"
+  }
+}

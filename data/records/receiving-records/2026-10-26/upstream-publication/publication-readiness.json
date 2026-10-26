@@ -1,0 +1,130 @@
+{
+  "kind": "source-publication-readiness-observation",
+  "at": "2026-10-26 17:22:45 UTC",
+  "source": {
+    "repository": "red-cup-engineering/github-engineering-services-section",
+    "head": "8a921a353d1944f8121896645ab1666e44c5d58f",
+    "files": [
+      {
+        "path": "src/submodule-pin-events.mjs",
+        "blob": "1cfa3bb40243885b22b6e54c0e98de867d271076",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/src/submodule-pin-events.mjs"
+      },
+      {
+        "path": "scripts/receive-submodule-pin-events.mjs",
+        "blob": "f82b9d80f618afb6b2c2614e3fce32d65762f0f5",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/scripts/receive-submodule-pin-events.mjs"
+      },
+      {
+        "path": "src/landing-publication.mjs",
+        "blob": "6c0b33e3eb6e6b9562495c34fbc5200722b0dfa9",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/src/landing-publication.mjs"
+      },
+      {
+        "path": "src/landing-journal.mjs",
+        "blob": "c9c4e9b3e37de07cca5010cde995905ccde4c334",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/src/landing-journal.mjs"
+      },
+      {
+        "path": "src/landing-events.mjs",
+        "blob": "b9dfe0c61c9392bf2d994f7b903c2b310bf033db",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/src/landing-events.mjs"
+      },
+      {
+        "path": "src/landing-evidence.mjs",
+        "blob": "f8e33f7187e186822c5b1c7e000fdb545072bc4f",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/src/landing-evidence.mjs"
+      },
+      {
+        "path": "scripts/publish-landed-packages.mjs",
+        "blob": "8e02055dcaa800bace226f7720329b40d8a017b6",
+        "url": "https://github.com/red-cup-engineering/github-engineering-services-section/blob/8a921a353d1944f8121896645ab1666e44c5d58f/scripts/publish-landed-packages.mjs"
+      }
+    ]
+  },
+  "deliveredSource": {
+    "repository": "red-cup-engineering/computer-systems-fabrication-engineering-services-section",
+    "commit": "0c972c163a3292a60ca54753f28f1947492384ce",
+    "tree": "bf0ff60c73975015009712e966675d63bce4f8d2",
+    "committedAt": "2026-10-26T16:59:21Z"
+  },
+  "readiness": {
+    "exactDeclaredHouseRuntime": {
+      "available": 59,
+      "absent": 0,
+      "unread": 0,
+      "unchangedFromBase": true,
+      "receipt": "runtime-availability-20261026T171632Z/receipt.json"
+    },
+    "declaredBuild": null,
+    "declaredPrepack": null,
+    "private": false,
+    "packedPublicTargets": {
+      "present": 137,
+      "missing": 0,
+      "receipt": "packed-public-targets.json",
+      "qualification": "finite metadata/member read of previously packed candidate; not actual publisher native member receiving"
+    },
+    "localReceiving": {
+      "newSourcePass": 11,
+      "originalGitPass": 30,
+      "newPackedPass": 11,
+      "newOnBase": {
+        "pass": 2,
+        "fail": 9
+      },
+      "receipt": "../../qualification-receipt.json"
+    }
+  },
+  "actualIssuance": {
+    "state": "not-observed",
+    "lastObservation": "2026-10-26T17:18:40.461592+00:00",
+    "versionsRead": 34,
+    "exactCommitMatches": 0,
+    "receipt": "registry-readback-20261026T171840Z.json"
+  },
+  "originalFlow": [
+    "Authenticated governed default-branch push enters submodulePinEventReceiver and its existing per-repository queue.",
+    "The landing ledger records null before a pass; publishLanding requires existing typed scratch and reads exact source and registry.",
+    "The publisher admits exact dependency declarations, source/build, packed export surface and native source/archive member comparison before registry PUT.",
+    "The receiver emits the stage=publish report to its original stdout journal; large reports retain a content-addressed report.id in the existing telemetry blob store.",
+    "Unread passes and awaited dependencies retain an outstanding ledger marker; current source supports bounded retries and startup reconciliation. Installed source/runtime state has not been observed."
+  ],
+  "nextRequiredObservation": {
+    "source": "Original receiver's existing journal and GITHUB_LANDING_STATE_DIR",
+    "selector": {
+      "landing": "red-cup-engineering/computer-systems-fabrication-engineering-services-section",
+      "commit": "0c972c163a3292a60ca54753f28f1947492384ce"
+    },
+    "fields": [
+      "stage",
+      "state",
+      "verdict",
+      "package",
+      "version",
+      "awaiting",
+      "memberReceiving",
+      "evidence",
+      "report.id",
+      "traceparent"
+    ],
+    "ledger": "landed-heads.json exact repository entry",
+    "fullEvidence": "telemetry store addressed by retained report.id/evidence; source module names the store, but no live path or content is assumed",
+    "state": "unobserved",
+    "reason": "Coordinator reports current Cold Red Gate connection network UNAVAILABLE. Existing source-monitor correlation remains unreceived; no duplicate submitted.",
+    "existingCorrelation": "ni:///sha-256;0I4JDo3zhm3fLzrN_c-QgKFQhttZWXSmxnRwdWT2RHk"
+  },
+  "continuation": {
+    "originalOperation": "publish-landed-packages <owner/name>@<exact-commit>",
+    "scope": "Existing authorized source publisher can take up the exact integrated source after reconciling its existing journal/registry record. No --estate or unrelated dependency publication is needed by the observed direct-runtime gate.",
+    "capability": "No installed publisher invocation or live service-journal read capability has been observed for this session; coordinator reports absent local publisher environment and unavailable current host connection.",
+    "performed": false,
+    "alternativeRouteCreated": false
+  },
+  "excludedInference": [
+    "The GitHub zero-step failure is not evidence of a native source test failure or the cause of publication delay.",
+    "All declared direct dependencies being present does not establish that the event arrived or later packing/native member receiving succeeded.",
+    "Current source implementation is not evidence of the deployed receiver's revision, process state, ledger or retry outcome.",
+    "A locally packed candidate is not an issued registry artifact."
+  ]
+}

@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: an envelope for candidate A cannot deposit receiving credit for candidate B
+ok 1 - an envelope for candidate A cannot deposit receiving credit for candidate B
+  ---
+  duration_ms: 338.651441
+  type: 'test'
+  ...
+# Subtest: a mixed valid and non-measured receipt is rejected without partially adding its valid support
+ok 2 - a mixed valid and non-measured receipt is rejected without partially adding its valid support
+  ---
+  duration_ms: 134.156355
+  type: 'test'
+  ...
+# Subtest: Requirement source retention preserves additional clauses and resists later caller mutation
+ok 3 - Requirement source retention preserves additional clauses and resists later caller mutation
+  ---
+  duration_ms: 51.553265
+  type: 'test'
+  ...
+# Subtest: a test runner changing the candidate cut cannot verify or accept the earlier candidate
+ok 4 - a test runner changing the candidate cut cannot verify or accept the earlier candidate
+  ---
+  duration_ms: 8057.745155
+  type: 'test'
+  ...
+# Subtest: receiving cannot accept a candidate changed during the receiving operation
+ok 5 - receiving cannot accept a candidate changed during the receiving operation
+  ---
+  duration_ms: 17656.882753
+  type: 'test'
+  ...
+# Subtest: a rollback success flag cannot substitute for the original source revision
+ok 6 - a rollback success flag cannot substitute for the original source revision
+  ---
+  duration_ms: 10078.39856
+  type: 'test'
+  ...
+# Subtest: a refused envelope remains a structural source observation without condition credit
+ok 7 - a refused envelope remains a structural source observation without condition credit
+  ---
+  duration_ms: 16350.24691
+  type: 'test'
+  ...
+# Subtest: test observations retain original structured evidence beyond the passed flag and text
+ok 8 - test observations retain original structured evidence beyond the passed flag and text
+  ---
+  duration_ms: 5622.397401
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58523.992969

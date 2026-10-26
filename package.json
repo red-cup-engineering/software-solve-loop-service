@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/software-solve-loop-service",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/software-solve-loop-service.git"
@@ -8,14 +8,22 @@
   "type": "module",
   "exports": {
     ".": "./src/solve-loop.mjs",
-    "./resolvers": "./src/resolvers.mjs"
+    "./resolvers": "./src/resolvers.mjs",
+    "./evidence": "./src/evidence.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/javascript-node-services-section": "0.4.1"
+    "@red-cup-engineering/javascript-node-services-section": "0.4.1",
+    "@red-cup-engineering/signcraft": "0.6.1-dev.495"
   },
   "scripts": {
     "test": "node --test"
   },
+  "receivingTests": [
+    "test/solve-loop.test.mjs",
+    "test/requirement-evidence.test.mjs",
+    "test/receiving-boundaries.test.mjs",
+    "test/local-source-receiving.test.mjs"
+  ],
   "license": "MIT",
   "funding": {
     "type": "individual",

@@ -1,0 +1,24 @@
+[
+  {
+    "package": "@red-cup-engineering/signcraft",
+    "head": "1bb1a43ffe2df068f34ae7455c7540e9a76fc706",
+    "observedAt": "2026-10-26T17:24:51.122428+00:00",
+    "modified": "2026-10-26T17:00:55.291Z",
+    "tags": {
+      "latest": "0.6.0",
+      "dev": "0.6.1-dev.478"
+    },
+    "matches": []
+  },
+  {
+    "package": "@red-cup-engineering/computer-systems-fabrication-engineering-services-section",
+    "head": "0c972c163a3292a60ca54753f28f1947492384ce",
+    "observedAt": "2026-10-26T17:24:51.160776+00:00",
+    "modified": "2026-10-26T01:10:11.071Z",
+    "tags": {
+      "latest": "0.4.14",
+      "dev": "0.4.15-dev.6"
+    },
+    "matches": []
+  }
+]

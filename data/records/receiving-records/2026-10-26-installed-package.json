@@ -1,0 +1,140 @@
+{
+  "kind": "engineering-native-receiving-record",
+  "sourceBase": "7beb6c86b66ec748733f1dbe0003a9948244d654",
+  "baseTree": "784e8c4059e40bf8cd8e13e888bacf3b39cff7a7",
+  "scope": "Actual locally packed solver candidate, independently installed with its exact original source lock and genuinely issued dependencies. This is native package receiving, not solver registry issuance, host activation or beneficiary acceptance.",
+  "archive": "red-cup-engineering-software-solve-loop-service-0.1.0.tgz",
+  "archiveSha256": "89795b8022be05c5914e756f8b2b19afe8f90dd03b3e0c8685bdaa550ccb2bd5",
+  "archiveIntegrity": "sha512-81OvYavWLcWhQrF8JDT0X9XbNPI95HjG+/b5QVXlB3Ripa0P92HXao3KiCVydF+9nPFHN0VReunnrRtP4AjuCg==",
+  "sourceArchiveByteEquality": true,
+  "packedFiles": 17,
+  "receivingFiles": 4,
+  "nativePackages": 121,
+  "node": "v24.22.1",
+  "pnpm": "11.28.5",
+  "exitCode": 0,
+  "counts": {
+    "tests": 33,
+    "pass": 33,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "durationMs": 43421.518903,
+  "lockSha256": "f31b132fee0b138c64e95326c4aa932b8e2b7fccb5b5e3c2fe4e60ba745d9e63",
+  "qualificationAuxiliaryInput": "The exact source pnpm-lock.yaml was copied unchanged into the unpacked package solely for frozen offline receiving; npm does not ship that lock.",
+  "receipts": {
+    "native-lock.log": {
+      "path": "data/records/receiving-records/2026-10-26/installed-package/native-lock.log",
+      "sha256": "bf8446cc5794576b95bf402dcb7e3d035c450e97efdf9c01a669edabe51c7b60"
+    },
+    "native-install.log": {
+      "path": "data/records/receiving-records/2026-10-26/installed-package/native-install.log",
+      "sha256": "9450ea9e99509ecfce6f0b7ccad141db0791a18c363cade2edfd6a2d21ef5228"
+    },
+    "packed-native-install.log": {
+      "path": "data/records/receiving-records/2026-10-26/installed-package/packed-native-install.log",
+      "sha256": "a4f36ff6faa39f1904618715f7ab5d8e36da8885b184b398408c5608fc9d56c4"
+    },
+    "packed-final-native.tap": {
+      "path": "data/records/receiving-records/2026-10-26/installed-package/packed-final-native.tap",
+      "sha256": "116792f4e118325ae059629103f8e791b32b1e572722190a6615558f3c2d4310"
+    },
+    "packed-installed-suppliers.json": {
+      "path": "data/records/receiving-records/2026-10-26/installed-package/packed-installed-suppliers.json",
+      "sha256": "65a38beffd9dd7b0f91c3b2ec824add7075655d54b7d0bf032fd94be6264df35"
+    },
+    "source-archive-verification.json": {
+      "path": "data/records/receiving-records/2026-10-26/installed-package/source-archive-verification.json",
+      "sha256": "6dc81c5dea91e58d8b2343ab2b8ce69d4b49e559aba728a8d6576a76da809758"
+    }
+  },
+  "sourceFiles": [
+    {
+      "path": "LICENSE",
+      "sha256": "e264f6d8d0c46911b9ca7a2a46a10fd1a2e7b64822f236b04a6afa7ee79083af",
+      "gitBlob": "61dbf67e6e610419422691ddd728f2c3647608bb"
+    },
+    {
+      "path": "content/agent-card-signing/jwks.json",
+      "sha256": "ee41193c11b2062270bb572ab9ae09e1dd02d047c29259a6447dfea26a107c2a",
+      "gitBlob": "d21c57c3ca6e46ad02328142d0695a12921f5e27"
+    },
+    {
+      "path": "package.json",
+      "sha256": "20b9d5234381e160566dc8e401ff39cef612edf51957dcf8287d02c1522308bb",
+      "gitBlob": "c9c23bca38e9ee6a8971dfed015dd449d6b8b376"
+    },
+    {
+      "path": "content/agent-cards/software-solve-loop-service.json",
+      "sha256": "9501bb58785599497a18d676b4ff069c3923cb76683d330d74fd85a587228ee7",
+      "gitBlob": "e454c51b951ff1578ea09da99fd19cb580a05e95"
+    },
+    {
+      "path": "specifications/cell-alignment-implementation.md",
+      "sha256": "9c54982ffbdf52ee467be847ec704998c9fb8b042bf7adb1a9e184a74183fb59",
+      "gitBlob": "4679c1280603780cccb6a7383b9e0148d6a41ba2"
+    },
+    {
+      "path": "specifications/independent-receiving-review.md",
+      "sha256": "388380aeeac99d48948833cf290b10bebef1cf52684d6d523a861d93c3a2a631",
+      "gitBlob": "a87894c8aca56fa39ffa574c4b29da92f63687e4"
+    },
+    {
+      "path": "specifications/market-requirement-source-lineage.md",
+      "sha256": "25ff97d4f988de021cad20f309882c6721ea4277125d7c069a1c1c18623ef952",
+      "gitBlob": "fa21ab1dcf174b55d1ec78e91c6cff29767d9dac"
+    },
+    {
+      "path": "README.md",
+      "sha256": "114271d3f7a54ba94b020d95ae93192d506a9c7f9b15e5ca0aa1b1a766d503ea",
+      "gitBlob": "337a47218fd1f73d495a9f9b874cb4770cbb836e"
+    },
+    {
+      "path": "specifications/requirement-settlement.md",
+      "sha256": "d3cd9664785112d29f562bd06b34b2fe4b361a5c7f1cddfa365dbb5ecbbae9b4",
+      "gitBlob": "f245a435e8ad3733602ed394ea930c968a2ad34f"
+    },
+    {
+      "path": "src/evidence.mjs",
+      "sha256": "05013a8982cab3ba88a288b3c55a5a68fa6c44ebd69a5252cf56864559d840b0",
+      "gitBlob": "4fd9b1ec7d46161ea4c3d5fb4a002c78b7a46530"
+    },
+    {
+      "path": "test/local-source-receiving.test.mjs",
+      "sha256": "533ea6a7680bed19403fa0758dd047a362102d3abbbc414e75a4decb770bfda2",
+      "gitBlob": "cf1f3b6a446fa1057119e16fc4ea81809fca0381"
+    },
+    {
+      "path": "test/receiving-boundaries.test.mjs",
+      "sha256": "c80060d97221f41ade1f1e4349cd36742fadd6be83c42254d314a2fce144db27",
+      "gitBlob": "6de163d0ce1084421786233cc4c94cf48faac517"
+    },
+    {
+      "path": "test/requirement-evidence.test.mjs",
+      "sha256": "766350c2496108890d2481397699614991578a378a5a2533446aed921c9d66a0",
+      "gitBlob": "4e8fa8b4a2449fa17fb4757f801e4b7eba54d707"
+    },
+    {
+      "path": "src/resolvers.mjs",
+      "sha256": "96cc2fd907c93ba4191b82ce693080dca91f4f0e62e3466a43417e88a685ea31",
+      "gitBlob": "255e700774dbb67fbce583346dbd02892ff39a6b"
+    },
+    {
+      "path": "src/solve-loop.mjs",
+      "sha256": "a89338af8bbd465a894660887a95246b93c268614ad89debfc4f8bdd65f2b731",
+      "gitBlob": "c650f59bee9169bcd9152174ebe2edb58a3aaad0"
+    },
+    {
+      "path": "test/solve-loop.test.mjs",
+      "sha256": "24bd940428258cfd88bc48ef7d5621660096cc27facb6c1f87a3a0a6e45c930d",
+      "gitBlob": "8a929a2f4c9f7bfb64e652f0106181ea5e1069a7"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "272db6f4804521f137cbfbb6a2386905a4c42de80620107a6abe24982f0f3625",
+      "gitBlob": "d41528e77994888cffaa3e91d8c6363537c68fc3"
+    }
+  ]
+}

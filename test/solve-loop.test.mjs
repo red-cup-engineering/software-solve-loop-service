@@ -1,6 +1,38 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { solveLoop } from "../src/solve-loop.mjs";
+import { solveLoop as nativeSolveLoop } from "../src/solve-loop.mjs";
+import { semanticId } from "@red-cup-engineering/signcraft/cell";
+
+const requirement = {kind: "requirement", id: "compile-exact", "met-when": [
+  {cell: "compile-exact:behavior", target: "held", says: "produce the required program behavior"},
+]};
+let runSequence = 0;
+const candidateFor = value => ({resource: "urn:fixture:source", revision: semanticId(value)});
+async function solveLoop(input) {
+  let current = candidateFor("original");
+  const options = {run: "urn:fixture:run:" + ++runSequence, producer: "fixture-producer",
+    requirement, observeCandidate: () => current, ...input};
+  if (input.applyPatch) options.applyPatch = async (...args) => {
+    const baseline = current;
+    const result = await input.applyPatch(...args);
+    if (!result?.ok) return result;
+    current = candidateFor(args[1]);
+    return {...result, candidate: current, ...(result.rollback ? {rollback: async () => {
+      const restored = await result.rollback();
+      if (restored?.restored) current = baseline;
+      return restored;
+    }} : {})};
+  };
+  if (input.resolvers) options.resolvers = input.resolvers.map(resolver => ({
+    ...resolver, attempt: async args => {
+      const result = await resolver.attempt(args);
+      if (!result?.mutated) return result;
+      current = candidateFor(resolver.name);
+      return {...result, candidate: current};
+    },
+  }));
+  return nativeSolveLoop(options);
+}
 import { selectResolver, autofixResolver } from "../src/resolvers.mjs";
 
 const task = { title: "compile an exact program" };
@@ -21,7 +53,7 @@ test("failed generated code is rolled back before the next generation reads its 
     },
     runTests: async () => ({ passed: state === "good", output: "failed behavior test" }),
   });
-  assert.equal(result.status, "solved-free");
+  assert.equal(result.status, "verified");
   assert.equal(result.rounds, 2);
   assert.equal(result.freeRounds, 2);
   assert.deepEqual(generated, [{ round: 1, state: "clean" }, { round: 2, state: "clean" }]);
@@ -38,7 +70,7 @@ test("a failed test without rollback stops before further patches or expensive r
     runTests: async () => ({ passed: false, output: "regression" }),
     refine: async () => { refinementCalls++; return { patch: "should-not-run" }; },
   });
-  assert.equal(result.status, "failed");
+  assert.equal(result.status, "needs-recovery");
   assert.equal(result.worktreeNeedsRecovery, true);
   assert.equal(result.stoppedAt, "model:1");
   assert.equal(generations, 1);
@@ -57,7 +89,7 @@ test("throwing or partially refused appliers cannot cascade potentially dirty so
       applyPatch,
       runTests: async () => { throw new Error("must not run tests for failed apply"); },
     });
-    assert.equal(result.status, "failed");
+    assert.equal(result.status, "needs-recovery");
     assert.equal(result.worktreeNeedsRecovery, true);
     assert.equal(calls, 1);
   }
@@ -72,7 +104,7 @@ test("cleanly refused source edit remains a valid retry opportunity", async () =
       ? { ok: false, unchanged: true, error: "ambiguous source" } : { ok: true },
     runTests: async () => ({ passed: true }),
   });
-  assert.equal(result.status, "solved-free");
+  assert.equal(result.status, "verified");
   assert.equal(result.rounds, 2);
   assert.equal(result.freeRounds, 1);
 });
@@ -88,7 +120,7 @@ test("dirty scripted resolver does not trigger model inference when its test fai
     generatePatch: async () => { calls++; return { patch: "should-not-run" }; },
     runTests: async () => ({ passed: false, output: "syntax failure" }),
   });
-  assert.equal(result.status, "failed");
+  assert.equal(result.status, "needs-recovery");
   assert.equal(result.worktreeNeedsRecovery, true);
   assert.equal(result.stoppedAt, "resolver:script-first");
   assert.equal(calls, 0);
@@ -106,8 +138,8 @@ test("script-first success does not spend inference and selection is dependency-
     runTests: async () => ({ passed: true }),
     generatePatch: async () => { calls++; return { patch: "no" }; },
   });
-  assert.equal(result.status, "solved-resolver");
-  assert.equal(result.solvedBy, "resolver:read-only-resolution");
+  assert.equal(result.status, "verified");
+  assert.equal(result.provider, "read-only-resolution");
   assert.equal(calls, 0);
 });
 
@@ -120,7 +152,7 @@ test("test-runner errors still require a verified rollback before retry", async 
       rollback: async () => { rollbacks++; return { restored: true }; } }),
     runTests: async () => attempts === 1 ? Promise.reject(new Error("runner died")) : { passed:true },
   });
-  assert.equal(result.status, "solved-free");
+  assert.equal(result.status, "verified");
   assert.equal(rollbacks, 1);
   assert.equal(attempts, 2);
 });
@@ -136,8 +168,31 @@ test("market refinement receives a clean workspace and the budget stays bounded"
     runTests: async () => ({ passed: true }),
   });
   assert.equal(observedDifficulty, 0.45);
-  assert.equal(result.status, "solved-refined");
-  assert.equal(result.solvedBy, "existing-market");
+  assert.equal(result.status, "verified");
+  assert.equal(result.provider, "existing-market");
   await assert.rejects(() => solveLoop({task,maxFreeRounds:17}),/maxFreeRounds/);
   await assert.rejects(() => solveLoop({task,maxFreeRounds:-1}),/maxFreeRounds/);
+});
+
+test("mutating resolver selection stops before context construction or another producer", async () => {
+  for (const match of [false, true, "throws"]) {
+    let revision = "original", laterCalls = 0;
+    const result = await nativeSolveLoop({
+      workdir: "/tmp/selection-fixture", run: "urn:selection:" + match,
+      producer: "fixture-producer", task, requirement, maxFreeRounds: 0,
+      observeCandidate: () => ({resource: "source", revision}),
+      resolvers: [{name: "dirty-selector", match: () => {
+        revision = "unreported-selection-mutation";
+        if (match === "throws") throw new Error("selector failed after mutation");
+        return match;
+      }, attempt: () => { laterCalls++; return null; }}],
+      buildContext: () => { laterCalls++; return {}; },
+      runTests: () => { laterCalls++; return {passed: true}; },
+    });
+    assert.equal(result.status, "needs-recovery");
+    assert.equal(laterCalls, 0, "selection cannot leave dirty source for another callback");
+    assert.equal(result.stoppedAt, "resolver-selection");
+    assert.deepEqual(result.currentCandidate,
+      {resource: "source", revision: "unreported-selection-mutation"});
+  }
 });

@@ -1,121 +1,209 @@
-// Contracted software solve loop: resolver -> context -> source proposal ->
-// behavior tests -> further proposals. Never retry against a dirty workspace.
+// Effects belong to the host. Source knowledge and settlement use SignCraft.
+import { coincides } from "@red-cup-engineering/signcraft/cell";
 import { selectResolver } from "./resolvers.mjs";
+import { SolveEvidence, sourceCoordinate } from "./evidence.mjs";
 
-export const DEFAULTS = { maxFreeRounds: 4 };
+export const DEFAULTS = Object.freeze({maxFreeRounds: 4});
 const explanation = error => error instanceof Error ? error.message : String(error);
 
 export async function solveLoop({
-  workdir, task, resolvers = [], buildContext = null,
-  generatePatch, applyPatch, runTests, refine = null, difficulty = null,
+  workdir, task, requirement, run, producer, receiver = null, cells = [],
+  resolvers = [], buildContext = null, generatePatch, applyPatch, runTests,
+  observeCandidate, receiveCandidate = null, refine = null, difficulty = null,
   maxFreeRounds = DEFAULTS.maxFreeRounds,
 }) {
   if (!Number.isSafeInteger(maxFreeRounds) || maxFreeRounds < 0 || maxFreeRounds > 16)
     throw new RangeError("maxFreeRounds must be an integer from 0 through 16");
-
-  const log = [];
-  const context = { task, failures: [] };
-  const stopUnclean = stage => finish("failed", log, {
-    solvedBy: null, worktreeNeedsRecovery: true, stoppedAt: stage,
+  if (typeof runTests !== "function" || typeof observeCandidate !== "function")
+    throw new TypeError("solve-loop: runTests and observeCandidate are required");
+  if (receiveCandidate !== null && (typeof receiveCandidate !== "function" || !receiver))
+    throw new TypeError("solve-loop: receiving requires a selected provider and callback");
+  const evidence = new SolveEvidence({run, producer, receiver, requirement, task, cells});
+  let testedRounds = 0, lastAssessment = null, lastCandidate = null, currentCandidate = null;
+  const context = () => Object.freeze({
+    task, requirement: evidence.requirement, requirementSource: evidence.source,
+    evidence: evidence.snapshot({settle: false}), assessment: lastAssessment,
   });
-
-  const restore = async (applied, stage) => {
+  const finish = (status, extra = {}) => Object.freeze({
+    status, freeRounds: testedRounds, currentCandidate, lastAttemptedCandidate: lastCandidate,
+    candidate: ["accepted", "verified"].includes(status) ? currentCandidate : null,
+    requirement: evidence.source, assessment: lastAssessment, ...extra, ...evidence.snapshot(),
+  });
+  const stopUnclean = stage => finish("needs-recovery", {
+    worktreeNeedsRecovery: true, stoppedAt: stage,
+  });
+  const observe = async stage => {
+    try {
+      currentCandidate = sourceCoordinate(await observeCandidate(workdir, context()), "observed candidate");
+      evidence.note("source-observed", {stage, candidate: currentCandidate});
+      return currentCandidate;
+    } catch (error) {
+      currentCandidate = null;
+      evidence.note("source-observation-failed", {stage, error: explanation(error)});
+      return null;
+    }
+  };
+  const unchanged = async (expected, stage) => {
+    const observed = await observe(stage);
+    const same = observed !== null && coincides(observed, expected);
+    if (!same) evidence.note("source-cut-changed", {stage, expected, observed});
+    return same;
+  };
+  const restore = async (applied, stage, baseline) => {
     if (typeof applied?.rollback !== "function") {
-      context.failures.push({ stage, rollback: "not provided" });
+      evidence.note("rollback-unavailable", {stage});
       return false;
     }
+    let reported = false;
     try {
       const result = await applied.rollback();
-      if (result?.restored === true) return true;
-      context.failures.push({ stage, rollback: "not verified restored" });
+      reported = result?.restored === true;
+      evidence.note("rollback-observed", {stage, result: result ?? null});
     } catch (error) {
-      context.failures.push({ stage, rollback: explanation(error) });
+      evidence.note("rollback-error", {stage, error: explanation(error)});
     }
-    return false;
+    const same = await unchanged(baseline, stage + ":restored");
+    return reported && same;
   };
 
-  const applyAndTest = async (attempt, stage) => {
-    if (!attempt?.mutated && !attempt?.patch)
-      return { passed: false, clean: true, tested: false };
+  if (await observe("initial") === null) return stopUnclean("initial");
 
+  const applyAndTest = async (attempt, stage, baseline) => {
+    if (!attempt?.mutated && !attempt?.patch)
+      return {clean: await unchanged(baseline, stage + ":no-candidate")};
     let applied;
-    if (attempt.mutated) {
-      applied = { ok: true, rollback: attempt.rollback };
-    } else {
-      try { applied = await applyPatch(workdir, attempt.patch); }
+    if (attempt.mutated) applied = {ok: true, rollback: attempt.rollback, candidate: attempt.candidate};
+    else {
+      if (!await unchanged(baseline, stage + ":before-apply")) return {clean: false};
+      if (typeof applyPatch !== "function") throw new TypeError("solve-loop: applyPatch is required for a patch");
+      try { applied = await applyPatch(workdir, attempt.patch, context()); }
       catch (error) {
-        context.failures.push({ stage, apply: explanation(error) });
-        // A thrown write may already have changed part of the worktree.
-        return { passed: false, clean: false, tested: false };
+        evidence.note("application-error", {stage, error: explanation(error)});
+        await observe(stage + ":application-error");
+        return {clean: false};
       }
     }
-
     if (!applied?.ok) {
-      context.failures.push({ stage, apply: applied?.error ?? "patch refused" });
-      const clean = applied?.unchanged === true || await restore(applied, stage);
-      return { passed: false, clean, tested: false };
+      evidence.note("application-refused", {stage, error: String(applied?.error ?? "patch refused")});
+      const clean = applied?.unchanged === true
+        ? await unchanged(baseline, stage + ":refused")
+        : await restore(applied, stage, baseline);
+      return {clean};
     }
-
-    let tested;
-    try { tested = await runTests(workdir); }
-    catch (error) { tested = { passed: false, output: explanation(error) }; }
-    if (tested?.passed === true)
-      return { passed: true, clean: true, tested: true };
-    context.failures.push({ stage, test: tested?.output ?? "tests did not pass" });
-    const clean = await restore(applied, stage);
-    return { passed: false, clean, tested: true };
-  };
-
-  const runRefinement = async reason => {
-    log.push({ stage: "downward-refinement", reason });
-    if (!refine) return finish("failed", log, { solvedBy: null });
-    const candidate = await refine({ workdir, task, context, log,
-      difficulty: Math.min(difficulty ?? 0.45, 0.45) });
-    const result = await applyAndTest(candidate, "market-refinement");
-    log.push({ stage: "refinement-settled", provider: candidate?.provider ?? null,
-      consideration: candidate?.consideration ?? null, passed: result.passed });
-    if (!result.clean) return stopUnclean("market-refinement");
-    return finish(result.passed ? "solved-refined" : "failed", log, {
-      solvedBy: result.passed ? (candidate.provider || "cheap-market-inference") : null,
-    });
-  };
-
-  const resolver = selectResolver(resolvers, task);
-  if (resolver) {
-    log.push({ stage: "resolver", name: resolver.name });
-    let attempt;
-    try { attempt = await resolver.attempt({ task, workdir }); }
+    let candidate;
+    try { candidate = evidence.candidate(applied.candidate); }
     catch (error) {
-      context.failures.push({ stage: "resolver:" + resolver.name, apply: explanation(error) });
-      return stopUnclean("resolver:" + resolver.name);
+      evidence.note("candidate-identity-refused", {stage, error: explanation(error)});
+      return {clean: await restore(applied, stage, baseline)};
     }
-    const outcome = await applyAndTest(attempt, "resolver:" + resolver.name);
-    if (outcome.passed)
-      return finish("solved-resolver", log, { solvedBy: "resolver:" + resolver.name });
-    log.push({ stage: "resolver-miss", name: resolver.name });
-    if (!outcome.clean) return stopUnclean("resolver:" + resolver.name);
+    lastCandidate = candidate;
+    lastAssessment = evidence.assess(candidate);
+    if (!await unchanged(candidate, stage + ":applied"))
+      return {clean: await restore(applied, stage, baseline)};
+    let tested;
+    try { tested = await runTests(workdir, {...context(), candidate}); }
+    catch (error) { tested = {passed: false, error: explanation(error)}; }
+    try { evidence.note("tests-observed", {stage, candidate, result: tested ?? null}); }
+    catch (error) {
+      evidence.note("tests-observation-refused", {stage, candidate, error: explanation(error)});
+      await observe(stage + ":tests-observation-refused");
+      return {clean: await restore(applied, stage, baseline)};
+    }
+    if (stage.startsWith("model:")) testedRounds++;
+    if (!await unchanged(candidate, stage + ":tested") || tested?.passed !== true)
+      return {clean: await restore(applied, stage, baseline)};
+
+    if (receiveCandidate === null) return {clean: true, status: "verified"};
+    let receipt;
+    try { receipt = await receiveCandidate({workdir, ...context(), candidate}); }
+    catch (error) {
+      evidence.note("receiving-error", {stage, candidate, error: explanation(error)});
+      if (!await unchanged(candidate, stage + ":receiving-error"))
+        return {clean: await restore(applied, stage, baseline)};
+      return {clean: true, status: "verified"};
+    }
+    // Retain the observation even if the host changed the code while receiving.
+    try { evidence.note("receiving-observed", {stage, candidate, receipt: receipt ?? null}); }
+    catch (error) {
+      evidence.note("receiving-observation-refused", {stage, candidate, error: explanation(error)});
+      await observe(stage + ":receiving-observation-refused");
+      return {clean: await restore(applied, stage, baseline)};
+    }
+    if (!await unchanged(candidate, stage + ":received"))
+      return {clean: await restore(applied, stage, baseline)};
+    try { lastAssessment = evidence.receive(receipt, candidate); }
+    catch (error) {
+      evidence.note("receiving-refused", {stage, candidate, error: explanation(error)});
+      return {clean: true, status: "verified"};
+    }
+    if (lastAssessment.state === "accepted") return {clean: true, status: "accepted"};
+    if (lastAssessment.state === "unknown") return {clean: true, status: "verified"};
+    const clean = await restore(applied, stage, baseline);
+    return {clean, ...(lastAssessment.state === "contested" ? {status: "contested"} : {})};
+  };
+  const conclude = (outcome, stage, provider, extra = {}) => {
+    if (!outcome.clean) return stopUnclean(stage);
+    return outcome.status ? finish(outcome.status, {provider, ...extra}) : null;
+  };
+  const beforeSelection = currentCandidate;
+  const resolver = selectResolver(resolvers, task);
+  if (!await unchanged(beforeSelection, "resolver-selection"))
+    return stopUnclean("resolver-selection");
+  if (resolver) {
+    const stage = "resolver:" + resolver.name, baseline = currentCandidate;
+    evidence.note("resolver-selected", {stage});
+    let attempt;
+    try { attempt = await resolver.attempt({workdir, ...context()}); }
+    catch (error) {
+      evidence.note("resolver-error", {stage, error: explanation(error)});
+      await observe(stage + ":error");
+      return stopUnclean(stage);
+    }
+    const result = conclude(await applyAndTest(attempt, stage, baseline), stage, resolver.name);
+    if (result) return result;
   }
 
-  const built = buildContext ? await buildContext({
-    task, workdir, failures: context.failures,
-  }) : { task };
-  Object.assign(context, built);
-  const ctx = { ...built, failures: context.failures };
-
+  const beforeContext = currentCandidate;
+  let built;
+  try { built = buildContext ? await buildContext({workdir, ...context()}) : {}; }
+  catch (error) {
+    evidence.note("context-error", {error: explanation(error)});
+    await observe("context:error");
+    return stopUnclean("context");
+  }
+  if (!await unchanged(beforeContext, "context")) return stopUnclean("context");
   for (let round = 1; round <= maxFreeRounds; round++) {
-    const gen = await generatePatch({ ...ctx, round });
-    if (!gen?.patch) { log.push({ round, event: "no-patch" }); break; }
-    const outcome = await applyAndTest(gen, "model:" + round);
-    log.push({ round, event: outcome.tested ? "tested" : "apply-failed",
-      passed: outcome.passed });
-    if (outcome.passed)
-      return finish("solved-free", log, { solvedBy: "free-model", rounds: round });
-    if (!outcome.clean) return stopUnclean("model:" + round);
+    if (typeof generatePatch !== "function") break;
+    const baseline = currentCandidate;
+    let candidate;
+    try { candidate = await generatePatch({...built, ...context(), round}); }
+    catch (error) {
+      evidence.note("proposal-error", {round, error: explanation(error)});
+      await observe("model:" + round + ":error");
+      return stopUnclean("model:" + round);
+    }
+    if (!await unchanged(baseline, "model:" + round + ":proposal")) return stopUnclean("model:" + round);
+    if (!candidate?.patch) { evidence.note("no-proposal", {round}); break; }
+    const stage = "model:" + round;
+    const result = conclude(await applyAndTest(candidate, stage, baseline), stage,
+      candidate.provider ?? "configured-generator", {rounds: round});
+    if (result) return result;
   }
-
-  return runRefinement("cheap rounds exhausted; narrow the unresolved residue");
-}
-
-function finish(status, log, extra = {}) {
-  return { status, log, freeRounds: log.filter(entry => entry.event === "tested").length, ...extra };
+  if (refine) {
+    evidence.note("refinement-selected");
+    const baseline = currentCandidate;
+    let candidate;
+    try { candidate = await refine({workdir, ...context(), difficulty: Math.min(difficulty ?? 0.45, 0.45)}); }
+    catch (error) {
+      evidence.note("refinement-error", {error: explanation(error)});
+      await observe("refinement:error");
+      return stopUnclean("market-refinement");
+    }
+    if (!candidate?.mutated && !await unchanged(baseline, "refinement:proposal"))
+      return stopUnclean("market-refinement");
+    const result = conclude(await applyAndTest(candidate, "market-refinement", baseline),
+      "market-refinement", candidate?.provider ?? "configured-refiner");
+    if (result) return result;
+  }
+  return finish("unresolved");
 }
