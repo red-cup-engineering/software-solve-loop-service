@@ -1,0 +1,8 @@
+{
+  "archive": "red-cup-engineering-software-solve-loop-service-0.1.0.tgz",
+  "sha256": "77ba231c73b1203cb2452f7c257e16d9eff990a3d0cda9f6af809dcab4ae94b9",
+  "integrity": "sha512-1/mu7KlOb68Tv5VJdJQZOMGwVxf4tbmBNyutu+WH/E/8TaXQhNoSzhNi7SCo8OQZOKjyVLfEnoWV/hflVigHLQ==",
+  "sourceEqualFiles": 17,
+  "mismatches": [],
+  "qualificationAuxiliaryInput": "Original pnpm-lock.yaml copied unchanged into unpacked package solely for frozen offline receiving; npm does not ship this lock."
+}

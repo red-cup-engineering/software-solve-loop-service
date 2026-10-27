@@ -1,0 +1,27 @@
+{
+  "name": "@red-cup-engineering/signcraft",
+  "version": "0.6.1-dev.517",
+  "gitHead": "9738794a2bab77a3474fdb98d54aab82553ea06b",
+  "dist": {
+    "shasum": "8fec96638bc920de790b0d4e25f5ce059cd821e4",
+    "integrity": "sha512-2Bx4CEJUR5eUPL6qQL2NxBz6UZ4KMNlUWNhzswTZx+fQzfTRK2A1luOvGoar178fxZ1i3IICX64AWRP9V6x6jA==",
+    "tarball": "https://registry.561.group/@red-cup-engineering/signcraft/-/signcraft-0.6.1-dev.517.tgz"
+  },
+  "sha256": "14174ed0d9f9e2f72bf5e94bd0f6b420e2978d30857eddfb7b5f6ffe1caaddc5",
+  "bytes": 250649,
+  "publishedAt": "2026-10-27T01:32:58.451Z",
+  "sourceComparison": {
+    "filesEqual": 79,
+    "nonManifestMismatches": [],
+    "manifestDifferences": {
+      "version": {
+        "source": "0.6.1-dev.5",
+        "issued": "0.6.1-dev.517"
+      },
+      "gitHead": {
+        "source": null,
+        "issued": "9738794a2bab77a3474fdb98d54aab82553ea06b"
+      }
+    }
+  }
+}
