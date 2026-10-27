@@ -1,0 +1,66 @@
+{
+  "repository": "red-cup-engineering/software-solve-loop-service",
+  "sourceCommit": "988b45dac259f72a18d8e394e1e473c40f96cf70",
+  "originalSourceFilesVerified": 53,
+  "changedOriginalFiles": [
+    {
+      "path": "package.json",
+      "originalGitBlob": "2455293b54f61e3ba347770a0926e1a67f3de08f",
+      "candidateGitBlob": "679606fe1b775c4ee2e6a45bdd7aa5a79bb89167",
+      "sha256": "63981f4e5ddf6b1748915c890aeaaa61ef082386063bdb1a27517df38abb0ffb"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "originalGitBlob": "4e47c05b339b4dab1e501b797b66fd81ec5f178e",
+      "candidateGitBlob": "69bdd41b75ec4c9241593c53fceecc69249bf4da",
+      "sha256": "26fb5750c0ae0e5b7426a4779b32f750d6b9f1b2cde8968ed156c6ec482e129c"
+    }
+  ],
+  "scope": "Receive the issued source-Cell inference correction through the original packed solver and its existing receiving contract.",
+  "selectedDependencies": {
+    "@red-cup-engineering/signcraft": "0.6.2-dev.522",
+    "@red-cup-engineering/javascript-node-services-section": "0.4.1"
+  },
+  "upstream": {
+    "sourceCommit": "85dfd1f8593ffbf7468099d355d5914c0418a981",
+    "archiveIntegrity": "sha512-eaHboIOKYQOfyEdGlDpwLmO4VEEvq1CB+vfCttj/c0kWMaAgB1mKCm84GuwXpCBmjH6m94gYXd06fXob5UZk0Q==",
+    "payloadFilesVerified": 80,
+    "receivingFiles": 22,
+    "passed": 220,
+    "identity": "issued-signcraft-identity.json",
+    "rawTap": "issued-signcraft-receiving.tap"
+  },
+  "nativeLock": {
+    "tool": "pnpm 11.25.0",
+    "generated": true,
+    "change": "Only the selected Craft version and its integrity; all other importers, providers and dependency edges retain their exact values.",
+    "log": "native-lock.log"
+  },
+  "packedConsumer": {
+    "archiveSha256": "22fffc9b0e3186555fd638471bce72d80d947ef8b81de3f0321b345c565bc78f",
+    "archiveIntegrity": "sha512-CC5HVeY/umAWV4uFzKNKDDe6cWzvt91NvJXPjENv36ycDjQUtHCznjAl8bTMLj+TgBA62rpny1s4/ZqptbWhRw==",
+    "payloadFilesVerified": 17,
+    "originalPayloadUnchangedExceptSignCraftPin": true,
+    "identity": "packed-identity.json",
+    "frozenInstall": true,
+    "installLog": "packed-native-install.log",
+    "installedPackages": 122,
+    "unchangedOtherProviders": 121,
+    "installedCraftPayloadFilesVerified": 80,
+    "supplierProof": "installed-native-suppliers.json",
+    "receivingFiles": 4,
+    "tests": 33,
+    "passed": 33,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "rawTap": "packed-receiving.tap",
+    "runner": "node --test --test-isolation=none --test-reporter=tap",
+    "nodeVersion": "v24.22.1"
+  },
+  "limits": {
+    "solverRegistryIssuanceVerified": false,
+    "activeFeltOSDutySelectionVerified": false,
+    "independentBeneficiaryAcceptanceClaimed": false
+  }
+}

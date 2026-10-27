@@ -1,0 +1,35 @@
+{
+  "repository": "red-cup-engineering/signcraft",
+  "sourceCommit": "85dfd1f8593ffbf7468099d355d5914c0418a981",
+  "package": "@red-cup-engineering/signcraft",
+  "version": "0.6.2-dev.522",
+  "archiveUrl": "https://registry.561.group/@red-cup-engineering/signcraft/-/signcraft-0.6.2-dev.522.tgz",
+  "archiveSha256": "8a531121fefb7ec080fc0587ac43e11d1af2ca81e07513bb0f6a7d0fc15282e0",
+  "archiveIntegrity": "sha512-eaHboIOKYQOfyEdGlDpwLmO4VEEvq1CB+vfCttj/c0kWMaAgB1mKCm84GuwXpCBmjH6m94gYXd06fXob5UZk0Q==",
+  "archiveBytes": 255321,
+  "payloadFiles": 80,
+  "allSourceBytesMatchExceptManifestVersionAndGitHead": true,
+  "nativeReceiving": {
+    "declaredFiles": 22,
+    "tests": 220,
+    "pass": 220,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "tap": "issued-signcraft-receiving.tap",
+    "tapSha256": "29a5aa1b08d89a3e28d0669960736f1ac6e0c00ec64f794e4d75c0fb0cefe74a"
+  },
+  "declaredNativeDependencies": {
+    "@red-cup-engineering/computer-code-engineering-services-section": "0.1.2",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.7.1",
+    "@red-cup-engineering/eavt-services-section": "0.11.0",
+    "@red-cup-engineering/exact-number-data-service": "0.1.2",
+    "@red-cup-engineering/html-structural-projection-service": "0.3.3",
+    "@red-cup-engineering/json-services-section": "0.4.0",
+    "@red-cup-engineering/metrologic": "0.14.3-dev.1377",
+    "@red-cup-engineering/semiotic-content-address": "0.1.1",
+    "@red-cup-engineering/signcell": "0.13.1-dev.212",
+    "@red-cup-engineering/signchain": "0.4.2-dev.72",
+    "@red-cup-engineering/signgraph": "0.7.1-dev.364"
+  }
+}

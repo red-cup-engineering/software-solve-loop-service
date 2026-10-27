@@ -1,0 +1,1330 @@
+TAP version 13
+# Subtest: native attention work computes a positive exact plan from retained source cells
+ok 1 - native attention work computes a positive exact plan from retained source cells
+  ---
+  duration_ms: 119.102965
+  type: 'test'
+  ...
+# Subtest: an actual search bound returns a feasible incumbent without an optimum telling
+ok 2 - an actual search bound returns a feasible incumbent without an optimum telling
+  ---
+  duration_ms: 117.100918
+  type: 'test'
+  ...
+# Subtest: original exact input-position ties and zero-cost benefits survive
+ok 3 - original exact input-position ties and zero-cost benefits survive
+  ---
+  duration_ms: 26.949406
+  type: 'test'
+  ...
+# Subtest: native reading retains contrary observations and untold external outcomes
+ok 4 - native reading retains contrary observations and untold external outcomes
+  ---
+  duration_ms: 72.508712
+  type: 'test'
+  ...
+# Subtest: receiving refuses a different request, changed numerical result or changed native source
+ok 5 - receiving refuses a different request, changed numerical result or changed native source
+  ---
+  duration_ms: 158.794307
+  type: 'test'
+  ...
+# Subtest: cheap native admission retains the original policy and arithmetic domain
+ok 6 - cheap native admission retains the original policy and arithmetic domain
+  ---
+  duration_ms: 1.138808
+  type: 'test'
+  ...
+# Subtest: the native SEN composition reaches the same pure positive producer
+ok 7 - the native SEN composition reaches the same pure positive producer
+  ---
+  duration_ms: 131.468175
+  type: 'test'
+  ...
+# Subtest: native Cell bytes retain both evidence sides through settlement and document replay
+ok 8 - native Cell bytes retain both evidence sides through settlement and document replay
+  ---
+  duration_ms: 43.893247
+  type: 'test'
+  ...
+# Subtest: a page commits its native byte-bearing source while disclosing only the selected cells
+ok 9 - a page commits its native byte-bearing source while disclosing only the selected cells
+  ---
+  duration_ms: 70.357887
+  type: 'test'
+  ...
+# Subtest: page keys preserve admitted JSON presentations and original typed collision refusal
+ok 10 - page keys preserve admitted JSON presentations and original typed collision refusal
+  ---
+  duration_ms: 2.151286
+  type: 'test'
+  ...
+# Subtest: opaque page Cells retain native identity, opposite evidence and byte distinctions
+ok 11 - opaque page Cells retain native identity, opposite evidence and byte distinctions
+  ---
+  duration_ms: 6.220328
+  type: 'test'
+  ...
+# Subtest: attention readings preserve native byte-backed opposition and leave external outcomes untold
+ok 12 - attention readings preserve native byte-backed opposition and leave external outcomes untold
+  ---
+  duration_ms: 62.902695
+  type: 'test'
+  ...
+# Subtest: a typed Thing retains the original Cell-owned source Mark rather than admitting a foreign getter
+ok 13 - a typed Thing retains the original Cell-owned source Mark rather than admitting a foreign getter
+  ---
+  duration_ms: 40.761591
+  type: 'test'
+  ...
+# Subtest: trace attribute coordinates use the same native byte identity as their source Cell
+ok 14 - trace attribute coordinates use the same native byte identity as their source Cell
+  ---
+  duration_ms: 0.349013
+  type: 'test'
+  ...
+# Subtest: the original Mark settlement and HP comparison retain byte-bearing source tokens
+ok 15 - the original Mark settlement and HP comparison retain byte-bearing source tokens
+  ---
+  duration_ms: 271.559542
+  type: 'test'
+  ...
+# Subtest: source-generated FOUR circuit behavior keeps byte-bearing native utterances
+ok 16 - source-generated FOUR circuit behavior keeps byte-bearing native utterances
+  ---
+  duration_ms: 147.447879
+  type: 'test'
+  ...
+# Subtest: an incomplete byte-backed circuit declaration stays identified and unknown
+ok 17 - an incomplete byte-backed circuit declaration stays identified and unknown
+  ---
+  duration_ms: 0.794291
+  type: 'test'
+  ...
+# Subtest: resource composition receives an original typed graph with opaque byte content
+ok 18 - resource composition receives an original typed graph with opaque byte content
+  ---
+  duration_ms: 129.745372
+  type: 'test'
+  ...
+# Subtest: foreign accessors remain refused without execution at native content boundaries
+ok 19 - foreign accessors remain refused without execution at native content boundaries
+  ---
+  duration_ms: 0.985428
+  type: 'test'
+  ...
+# Subtest: paid mathematical work executes from real source cells and survives independent JSON replay
+ok 20 - paid mathematical work executes from real source cells and survives independent JSON replay
+  ---
+  duration_ms: 454.513931
+  type: 'test'
+  ...
+# Subtest: model identity changes with capacities, costs and demands even when names stay the same
+ok 21 - model identity changes with capacities, costs and demands even when names stay the same
+  ---
+  duration_ms: 341.844248
+  type: 'test'
+  ...
+# Subtest: certificate, cell and rule tampering never becomes true through a supplied verified flag
+ok 22 - certificate, cell and rule tampering never becomes true through a supplied verified flag
+  ---
+  duration_ms: 362.365425
+  type: 'test'
+  ...
+# Subtest: mathematical computation leaves customer acceptance and payment unknown
+ok 23 - mathematical computation leaves customer acceptance and payment unknown
+  ---
+  duration_ms: 78.646268
+  type: 'test'
+  ...
+# Subtest: new opposing sensor evidence is held by the native fiber and sheaf
+ok 24 - new opposing sensor evidence is held by the native fiber and sheaf
+  ---
+  duration_ms: 93.121726
+  type: 'test'
+  ...
+# Subtest: one optimum supplies source-told, independently checked allocations for every selected budget
+ok 25 - one optimum supplies source-told, independently checked allocations for every selected budget
+  ---
+  duration_ms: 591.750452
+  type: 'test'
+  ...
+# Subtest: historical cellular receipts retain their weaker intermediate-budget scope
+ok 26 - historical cellular receipts retain their weaker intermediate-budget scope
+  ---
+  duration_ms: 155.52957
+  type: 'test'
+  ...
+# Subtest: a supplied host capacity policy becomes source Cells and must match during replay
+ok 27 - a supplied host capacity policy becomes source Cells and must match during replay
+  ---
+  duration_ms: 1187.846716
+  type: 'test'
+  ...
+# Subtest: host denominator admission uses reduced common quantities and costs, with independent budgets
+ok 28 - host denominator admission uses reduced common quantities and costs, with independent budgets
+  ---
+  duration_ms: 1.979128
+  type: 'test'
+  ...
+# Subtest: residual rerouting retains the exact lexicographic optimum rather than a greedy route
+ok 29 - residual rerouting retains the exact lexicographic optimum rather than a greedy route
+  ---
+  duration_ms: 248.577161
+  type: 'test'
+  ...
+# Subtest: cheap admission refuses malformed and oversized contracts without authority fields
+ok 30 - cheap admission refuses malformed and oversized contracts without authority fields
+  ---
+  duration_ms: 0.620551
+  type: 'test'
+  ...
+# Subtest: the original SEN primitive environment reaches the same producer and receiver
+ok 31 - the original SEN primitive environment reaches the same producer and receiver
+  ---
+  duration_ms: 386.25055
+  type: 'test'
+  ...
+# Subtest: multicellular composition: source exchange is not multiplied by retellings
+ok 32 - multicellular composition: source exchange is not multiplied by retellings
+  ---
+  duration_ms: 158.32957
+  type: 'test'
+  ...
+# Subtest: internal exchange keeps original identity and witnesses despite zero external boundary
+ok 33 - internal exchange keeps original identity and witnesses despite zero external boundary
+  ---
+  duration_ms: 140.88705
+  type: 'test'
+  ...
+# Subtest: quantity-shaped Marks outside the source-defined numerical type cannot become a physical incidence
+ok 34 - quantity-shaped Marks outside the source-defined numerical type cannot become a physical incidence
+  ---
+  duration_ms: 299.065257
+  type: 'test'
+  ...
+# Subtest: different units never cancel as a fabricated resource conservation claim
+ok 35 - different units never cancel as a fabricated resource conservation claim
+  ---
+  duration_ms: 96.809867
+  type: 'test'
+  ...
+# Subtest: large resource amounts remain exact beyond the IEEE-754 integer limit
+ok 36 - large resource amounts remain exact beyond the IEEE-754 integer limit
+  ---
+  duration_ms: 73.028501
+  type: 'test'
+  ...
+# Subtest: nested source boundaries push forward to a common witnessed tissue without double accounting
+ok 37 - nested source boundaries push forward to a common witnessed tissue without double accounting
+  ---
+  duration_ms: 113.422142
+  type: 'test'
+  ...
+# Subtest: an unobserved parent cannot become an assumed zero outer boundary
+ok 38 - an unobserved parent cannot become an assumed zero outer boundary
+  ---
+  duration_ms: 169.314553
+  type: 'test'
+  ...
+# Subtest: noncanonical and unsupported source quantities are not silently rounded
+ok 39 - noncanonical and unsupported source quantities are not silently rounded
+  ---
+  duration_ms: 403.758247
+  type: 'test'
+  ...
+# Subtest: incomplete and contradictory sources refuse, rather than turning unknown into zero
+ok 40 - incomplete and contradictory sources refuse, rather than turning unknown into zero
+  ---
+  duration_ms: 156.267081
+  type: 'test'
+  ...
+# Subtest: the selected original Graph incidence supplier is present and retains the same exchange identities
+ok 41 - the selected original Graph incidence supplier is present and retains the same exchange identities
+  ---
+  duration_ms: 124.96097
+  type: 'test'
+  ...
+# Subtest: the selected original transport and allocation suppliers are mandatory receiving dependencies
+ok 42 - the selected original transport and allocation suppliers are mandatory receiving dependencies
+  ---
+  duration_ms: 0.255514
+  type: 'test'
+  ...
+# Subtest: source-qualified conditional pressure sums both options against shared capacity
+ok 43 - source-qualified conditional pressure sums both options against shared capacity
+  ---
+  duration_ms: 185.720629
+  type: 'test'
+  ...
+# Subtest: exact 49-case route-local vs shared-source discriminator is a real SignCraft receiver
+ok 44 - exact 49-case route-local vs shared-source discriminator is a real SignCraft receiver
+  ---
+  duration_ms: 2410.155086
+  type: 'test'
+  ...
+# Subtest: unqualified, revoked, expired, fake or mixed-unit route cannot pass design-time pressure
+ok 45 - unqualified, revoked, expired, fake or mixed-unit route cannot pass design-time pressure
+  ---
+  duration_ms: 315.385327
+  type: 'test'
+  ...
+# Subtest: an overcommitted witnessed channel receives an ACTUAL fair signed allocation, not just a warning
+ok 46 - an overcommitted witnessed channel receives an ACTUAL fair signed allocation, not just a warning
+  ---
+  duration_ms: 45.308165
+  type: 'test'
+  ...
+# Subtest: original Code SEN receives the same exact allocation and original typed capacity response
+ok 47 - original Code SEN receives the same exact allocation and original typed capacity response
+  ---
+  duration_ms: 215.903809
+  type: 'test'
+  ...
+# Subtest: Craft exposes the exact selected Graph and Cell bindings to downstream hosts
+ok 48 - Craft exposes the exact selected Graph and Cell bindings to downstream hosts
+  ---
+  duration_ms: 2.85419
+  type: 'test'
+  ...
+# Subtest: Craft's original bit operations receive the selected private Data owner and preserve obstructions
+ok 49 - Craft's original bit operations receive the selected private Data owner and preserve obstructions
+  ---
+  duration_ms: 3.211005
+  type: 'test'
+  ...
+# Subtest: Craft's native cellular section retains exact source readings and contradictory equations
+ok 50 - Craft's native cellular section retains exact source readings and contradictory equations
+  ---
+  duration_ms: 5.216933
+  type: 'test'
+  ...
+# Subtest: the selected finite context closes only original incidence and keeps source order
+ok 51 - the selected finite context closes only original incidence and keeps source order
+  ---
+  duration_ms: 1.332248
+  type: 'test'
+  ...
+# Subtest: native Cell witnesses remain sided through Craft settlement and its original mesh reading
+ok 52 - native Cell witnesses remain sided through Craft settlement and its original mesh reading
+  ---
+  duration_ms: 21.129729
+  type: 'test'
+  ...
+# Subtest: the public Cell provider preserves every selected owner binding, including retention
+ok 53 - the public Cell provider preserves every selected owner binding, including retention
+  ---
+  duration_ms: 2.389354
+  type: 'test'
+  ...
+# Subtest: the selected Cell's private bytes survive native history and checkpoint receiving
+ok 54 - the selected Cell's private bytes survive native history and checkpoint receiving
+  ---
+  duration_ms: 17.441969
+  type: 'test'
+  ...
+# Subtest: shared retention still refuses forged accessors without reading or admitting them
+ok 55 - shared retention still refuses forged accessors without reading or admitting them
+  ---
+  duration_ms: 0.972218
+  type: 'test'
+  ...
+# Subtest: observe, replay, continue and restore retain source and cell representatives with the same revision address
+ok 56 - observe, replay, continue and restore retain source and cell representatives with the same revision address
+  ---
+  duration_ms: 17.642589
+  type: 'test'
+  ...
+# Subtest: checkpoint restoration preserves retained representatives and private byte content
+ok 57 - checkpoint restoration preserves retained representatives and private byte content
+  ---
+  duration_ms: 3.261551
+  type: 'test'
+  ...
+# Subtest: SignCraft constructs a self-avoiding 2D H4 protein fold at the exact global lattice optimum
+ok 58 - SignCraft constructs a self-avoiding 2D H4 protein fold at the exact global lattice optimum
+  ---
+  duration_ms: 3.036924
+  type: 'test'
+  ...
+# Subtest: 3D cubic HP folding constructs valid exact shortest-bond coordinates
+ok 59 - 3D cubic HP folding constructs valid exact shortest-bond coordinates
+  ---
+  duration_ms: 0.477796
+  type: 'test'
+  ...
+# Subtest: required nonbonded contact compiles into an actual generated fold
+ok 60 - required nonbonded contact compiles into an actual generated fold
+  ---
+  duration_ms: 0.425708
+  type: 'test'
+  ...
+# Subtest: impossible even-distance lattice contact returns parity obstruction immediately
+ok 61 - impossible even-distance lattice contact returns parity obstruction immediately
+  ---
+  duration_ms: 0.258517
+  type: 'test'
+  ...
+# Subtest: contradictory odd-parity requirements are refuted by actual exhaustive path construction
+ok 62 - contradictory odd-parity requirements are refuted by actual exhaustive path construction
+  ---
+  duration_ms: 11.425054
+  type: 'test'
+  ...
+# Subtest: search limits return UNKNOWN with clearly provisional structure, never certified optimum
+ok 63 - search limits return UNKNOWN with clearly provisional structure, never certified optimum
+  ---
+  duration_ms: 0.557686
+  type: 'test'
+  ...
+# Subtest: proof cannot be transferred between sequences, constraints, geometry or forged energy
+ok 64 - proof cannot be transferred between sequences, constraints, geometry or forged energy
+  ---
+  duration_ms: 1.404256
+  type: 'test'
+  ...
+# Subtest: native SEN protein folding uses same source-owned SignCraft kernel
+ok 65 - native SEN protein folding uses same source-owned SignCraft kernel
+  ---
+  duration_ms: 0.496956
+  type: 'test'
+  ...
+# Subtest: HP geometry is a comparison projection of original positive Mark utterances, not a new foundation
+ok 66 - HP geometry is a comparison projection of original positive Mark utterances, not a new foundation
+  ---
+  duration_ms: 225.190026
+  type: 'test'
+  ...
+# Subtest: a Mark is not physical residue evidence until positively told and uncontested
+ok 67 - a Mark is not physical residue evidence until positively told and uncontested
+  ---
+  duration_ms: 91.246724
+  type: 'test'
+  ...
+# Subtest: conventional HP proof cannot be rehomed to differently uttered protein Marks
+ok 68 - conventional HP proof cannot be rehomed to differently uttered protein Marks
+  ---
+  duration_ms: 102.137257
+  type: 'test'
+  ...
+# Subtest: one newly settled residue Mark changes the generated fold without inheriting the prior certificate
+ok 69 - one newly settled residue Mark changes the generated fold without inheriting the prior certificate
+  ---
+  duration_ms: 281.08675
+  type: 'test'
+  ...
+# Subtest: machine actions are replayable immutable transitions with explicit capabilities
+ok 70 - machine actions are replayable immutable transitions with explicit capabilities
+  ---
+  duration_ms: 7.697184
+  type: 'test'
+  ...
+# Subtest: the actor boundary refuses undeclared field attributes and malformed actor identities without changing state
+ok 71 - the actor boundary refuses undeclared field attributes and malformed actor identities without changing state
+  ---
+  duration_ms: 0.537647
+  type: 'test'
+  ...
+# Subtest: synthesize fabricates a counterfactual sign-system proposal without fabricating testimony
+ok 72 - synthesize fabricates a counterfactual sign-system proposal without fabricating testimony
+  ---
+  duration_ms: 1.83375
+  type: 'test'
+  ...
+# Subtest: replayed projected telling does not mint another change, while contrary testimony is retained
+ok 73 - replayed projected telling does not mint another change, while contrary testimony is retained
+  ---
+  duration_ms: 0.468743
+  type: 'test'
+  ...
+# Subtest: quiescent settlement cannot silently age the conductance field or mint a journal change
+ok 74 - quiescent settlement cannot silently age the conductance field or mint a journal change
+  ---
+  duration_ms: 2.991276
+  type: 'test'
+  ...
+# Subtest: identical final FOUR knowledge and total flux can carry different settled learning histories
+ok 75 - identical final FOUR knowledge and total flux can carry different settled learning histories
+  ---
+  duration_ms: 16.188247
+  type: 'test'
+  ...
+# Subtest: source context consumes all sixteen witness/value combinations through canonical claim coordinates
+ok 76 - source context consumes all sixteen witness/value combinations through canonical claim coordinates
+  ---
+  duration_ms: 46.280136
+  type: 'test'
+  ...
+# Subtest: native source admission retains opaque tokens, bytes, explicit unknowns and complete witness carriers
+ok 77 - native source admission retains opaque tokens, bytes, explicit unknowns and complete witness carriers
+  ---
+  duration_ms: 6.804085
+  type: 'test'
+  ...
+# Subtest: source cuts join duplicate tellings and retain independent opposing witnesses
+ok 78 - source cuts join duplicate tellings and retain independent opposing witnesses
+  ---
+  duration_ms: 26.574774
+  type: 'test'
+  ...
+# Subtest: source-bound state admits witnessed episodes atomically and refuses bare readings
+ok 79 - source-bound state admits witnessed episodes atomically and refuses bare readings
+  ---
+  duration_ms: 16.15609
+  type: 'test'
+  ...
+# Subtest: an explicitly unknown source Cell registers a token without manufacturing a telling
+ok 80 - an explicitly unknown source Cell registers a token without manufacturing a telling
+  ---
+  duration_ms: 12.491323
+  type: 'test'
+  ...
+# Subtest: finite settlement returns native posited Cells without promoting inferred values to sensor evidence
+ok 81 - finite settlement returns native posited Cells without promoting inferred values to sensor evidence
+  ---
+  duration_ms: 19.960806
+  type: 'test'
+  ...
+# Subtest: repeated evidence cannot manufacture time or learning; distinct and contrary evidence remain inspectable
+ok 82 - repeated evidence cannot manufacture time or learning; distinct and contrary evidence remain inspectable
+  ---
+  duration_ms: 41.211886
+  type: 'test'
+  ...
+# Subtest: counterfactual design remains outside source and posited observational state
+ok 83 - counterfactual design remains outside source and posited observational state
+  ---
+  duration_ms: 16.47639
+  type: 'test'
+  ...
+# Subtest: the original SignCell JSON Schema type admits the envelope and refuses malformed or unbounded work
+ok 84 - the original SignCell JSON Schema type admits the envelope and refuses malformed or unbounded work
+  ---
+  duration_ms: 21.485391
+  type: 'test'
+  ...
+# Subtest: admission does not execute accessors or preserve mutable source aliases
+ok 85 - admission does not execute accessors or preserve mutable source aliases
+  ---
+  duration_ms: 13.330343
+  type: 'test'
+  ...
+# Subtest: request admission checks all native episode Cells and the fixed claim alphabet before computation
+ok 86 - request admission checks all native episode Cells and the fixed claim alphabet before computation
+  ---
+  duration_ms: 20.054129
+  type: 'test'
+  ...
+# Subtest: wire admission bounds actual native model dimensions before compiling its implication basis
+ok 87 - wire admission bounds actual native model dimensions before compiling its implication basis
+  ---
+  duration_ms: 94.349999
+  type: 'test'
+  ...
+# Subtest: native and SEN receiving replay the same source-bearing computation and detect altered evidence
+ok 88 - native and SEN receiving replay the same source-bearing computation and detect altered evidence
+  ---
+  duration_ms: 119.419695
+  type: 'test'
+  ...
+# Subtest: existing source-trace consumer returns original EAVT rows and native Cell witnesses
+ok 89 - existing source-trace consumer returns original EAVT rows and native Cell witnesses
+  ---
+  duration_ms: 8.415481
+  type: 'test'
+  ...
+# Subtest: a trace becomes the machine's context through eavt's strata: retraction and converse are eavt's law
+ok 90 - a trace becomes the machine's context through eavt's strata: retraction and converse are eavt's law
+  ---
+  duration_ms: 54.371141
+  type: 'test'
+  ...
+# Subtest: a fresh entity is comprehended against the trace's context: penguin forces bird and flies=no
+ok 91 - a fresh entity is comprehended against the trace's context: penguin forces bird and flies=no
+  ---
+  duration_ms: 78.251084
+  type: 'test'
+  ...
+# Subtest: original EAVT signal strata prepare the SAME bounded inference machine with source custody
+ok 92 - original EAVT signal strata prepare the SAME bounded inference machine with source custody
+  ---
+  duration_ms: 20.020184
+  type: 'test'
+  ...
+# Subtest: real SCA/SEN/SEAVT events become a time-filtered settled predicate fiber
+ok 93 - real SCA/SEN/SEAVT events become a time-filtered settled predicate fiber
+  ---
+  duration_ms: 83.237843
+  type: 'test'
+  ...
+# Subtest: the inherited inference engine actually fires a rule on opposing evidence
+ok 94 - the inherited inference engine actually fires a rule on opposing evidence
+  ---
+  duration_ms: 12.149721
+  type: 'test'
+  ...
+# Subtest: existing contextual SHP HTML carries opposition without leaking hidden claims
+ok 95 - existing contextual SHP HTML carries opposition without leaking hidden claims
+  ---
+  duration_ms: 6.353709
+  type: 'test'
+  ...
+# Subtest: invented addresses, invalid cutoffs and unwitnessed override refuse
+ok 96 - invented addresses, invalid cutoffs and unwitnessed override refuse
+  ---
+  duration_ms: 4.674631
+  type: 'test'
+  ...
+# Subtest: native SHP packet retains typed SCA cells and both evidence lanes inside the committed frontier
+ok 97 - native SHP packet retains typed SCA cells and both evidence lanes inside the committed frontier
+  ---
+  duration_ms: 72.239207
+  type: 'test'
+  ...
+# Subtest: native SignCraft toldClaim reads one inherited claim, retaining both sources across log additions
+ok 98 - native SignCraft toldClaim reads one inherited claim, retaining both sources across log additions
+  ---
+  duration_ms: 7.991064
+  type: 'test'
+  ...
+# Subtest: SignCraft source-told fibers do not silently attribute inference rules to witnesses
+ok 99 - SignCraft source-told fibers do not silently attribute inference rules to witnesses
+  ---
+  duration_ms: 4.153659
+  type: 'test'
+  ...
+# Subtest: time-filtered SEAVT source-told query retains its original cutoff
+ok 100 - time-filtered SEAVT source-told query retains its original cutoff
+  ---
+  duration_ms: 2.568021
+  type: 'test'
+  ...
+# Subtest: SignCraft queries actual inherited source-claim fibers, not a document-index vocabulary
+ok 101 - SignCraft queries actual inherited source-claim fibers, not a document-index vocabulary
+  ---
+  duration_ms: 9.822211
+  type: 'test'
+  ...
+# Subtest: native source query excludes rule-derived claims and respects SEAVT observation cutoff
+ok 102 - native source query excludes rule-derived claims and respects SEAVT observation cutoff
+  ---
+  duration_ms: 6.591376
+  type: 'test'
+  ...
+# Subtest: SignCraft directly ingests source-owned SignCells without duplicating leaf EAVT joins
+ok 103 - SignCraft directly ingests source-owned SignCells without duplicating leaf EAVT joins
+  ---
+  duration_ms: 6.669177
+  type: 'test'
+  ...
+# Subtest: an authored unknown claim is a structural cell, not synthetic evidence or absence
+ok 104 - an authored unknown claim is a structural cell, not synthetic evidence or absence
+  ---
+  duration_ms: 5.232147
+  type: 'test'
+  ...
+# Subtest: source news records share one queryable cell graph without losing record provenance
+ok 105 - source news records share one queryable cell graph without losing record provenance
+  ---
+  duration_ms: 101.427762
+  type: 'test'
+  ...
+# Subtest: one admitted graph keeps colliding source lexemes in their actual record payloads
+ok 106 - one admitted graph keeps colliding source lexemes in their actual record payloads
+  ---
+  duration_ms: 17.640707
+  type: 'test'
+  ...
+# Subtest: pure media composition shares exact bytes while retaining original source occurrences
+ok 107 - pure media composition shares exact bytes while retaining original source occurrences
+  ---
+  duration_ms: 21.666979
+  type: 'test'
+  ...
+# Subtest: format interpretations remain distinct claims and cannot change raw-byte identity
+ok 108 - format interpretations remain distinct claims and cannot change raw-byte identity
+  ---
+  duration_ms: 13.519475
+  type: 'test'
+  ...
+# Subtest: pure media retains bytes and source values independently of caller mutation
+ok 109 - pure media retains bytes and source values independently of caller mutation
+  ---
+  duration_ms: 4.418567
+  type: 'test'
+  ...
+# Subtest: empty media is empty knowledge and no source provenance is invented
+ok 110 - empty media is empty knowledge and no source provenance is invented
+  ---
+  duration_ms: 0.484687
+  type: 'test'
+  ...
+# Subtest: iterable producers may reuse a byte buffer without separating claims from their resources
+ok 111 - iterable producers may reuse a byte buffer without separating claims from their resources
+  ---
+  duration_ms: 8.891665
+  type: 'test'
+  ...
+# Subtest: typed source witnesses are detached between their admitted supplier owners
+ok 112 - typed source witnesses are detached between their admitted supplier owners
+  ---
+  duration_ms: 11.361159
+  type: 'test'
+  ...
+# Subtest: a SignCell predicate reads all FOUR places through Metrologic without a local status algebra
+ok 113 - a SignCell predicate reads all FOUR places through Metrologic without a local status algebra
+  ---
+  duration_ms: 3.154491
+  type: 'test'
+  ...
+# Subtest: the ordinary and auditing projections preserve positive, negative, contested and absent evidence
+ok 114 - the ordinary and auditing projections preserve positive, negative, contested and absent evidence
+  ---
+  duration_ms: 4.151105
+  type: 'test'
+  ...
+# Subtest: an implicit audit frame selects all visible FOUR places while calm remains supported-only
+ok 115 - an implicit audit frame selects all visible FOUR places while calm remains supported-only
+  ---
+  duration_ms: 1.669654
+  type: 'test'
+  ...
+# Subtest: audit mode does not widen explicitly admitted custom vantages
+ok 116 - audit mode does not widen explicitly admitted custom vantages
+  ---
+  duration_ms: 1.042955
+  type: 'test'
+  ...
+# Subtest: an exception witness does not turn a source violation into a conformance witness
+ok 117 - an exception witness does not turn a source violation into a conformance witness
+  ---
+  duration_ms: 3.284206
+  type: 'test'
+  ...
+# Subtest: untrusted evidence remains text rather than executable HTML
+ok 118 - untrusted evidence remains text rather than executable HTML
+  ---
+  duration_ms: 0.495964
+  type: 'test'
+  ...
+# Subtest: multiple source tellings of one predicate join through SignCell in either arrival order
+ok 119 - multiple source tellings of one predicate join through SignCell in either arrival order
+  ---
+  duration_ms: 1.371487
+  type: 'test'
+  ...
+# Subtest: repeat tellings are idempotent and different triples stay distinct
+ok 120 - repeat tellings are idempotent and different triples stay distinct
+  ---
+  duration_ms: 6.108952
+  type: 'test'
+  ...
+# Subtest: presentation-label collisions refuse rather than silently overwriting typed source identity
+ok 121 - presentation-label collisions refuse rather than silently overwriting typed source identity
+  ---
+  duration_ms: 1.122784
+  type: 'test'
+  ...
+# Subtest: stackPages glues independent inspections without losing later adverse evidence
+ok 122 - stackPages glues independent inspections without losing later adverse evidence
+  ---
+  duration_ms: 1.129383
+  type: 'test'
+  ...
+# Subtest: source-order remains the original first-seen order while repeated tellings accumulate
+ok 123 - source-order remains the original first-seen order while repeated tellings accumulate
+  ---
+  duration_ms: 0.852889
+  type: 'test'
+  ...
+# Subtest: an audit retains unknown cells but never exposes a hidden predicate
+ok 124 - an audit retains unknown cells but never exposes a hidden predicate
+  ---
+  duration_ms: 0.470545
+  type: 'test'
+  ...
+# Subtest: a hidden-only inspection cannot leak its private subject through document title
+ok 125 - a hidden-only inspection cannot leak its private subject through document title
+  ---
+  duration_ms: 0.555814
+  type: 'test'
+  ...
+# Subtest: metadata in an audit article never discloses an explicitly hidden page subject
+ok 126 - metadata in an audit article never discloses an explicitly hidden page subject
+  ---
+  duration_ms: 0.518628
+  type: 'test'
+  ...
+# Subtest: an unknown sidecar only contains cells visible to its selected context
+ok 127 - an unknown sidecar only contains cells visible to its selected context
+  ---
+  duration_ms: 0.510516
+  type: 'test'
+  ...
+# Subtest: semantically identical SignCell subjects conflate even if JSON field order differs
+ok 128 - semantically identical SignCell subjects conflate even if JSON field order differs
+  ---
+  duration_ms: 1.431076
+  type: 'test'
+  ...
+# Subtest: duplicate context names refuse instead of mixing incompatible visibility rules
+ok 129 - duplicate context names refuse instead of mixing incompatible visibility rules
+  ---
+  duration_ms: 0.917125
+  type: 'test'
+  ...
+# Subtest: stackPages refuses same-named but independently configured viewing contexts
+ok 130 - stackPages refuses same-named but independently configured viewing contexts
+  ---
+  duration_ms: 0.926049
+  type: 'test'
+  ...
+# Subtest: native SEN synthesize verb composes the existing SignCraft pure generator
+ok 131 - native SEN synthesize verb composes the existing SignCraft pure generator
+  ---
+  duration_ms: 16.16356
+  type: 'test'
+  ...
+# Subtest: native SEN synthesis refuses foreign attributes instead of fabricating an evidential permission
+ok 132 - native SEN synthesis refuses foreign attributes instead of fabricating an evidential permission
+  ---
+  duration_ms: 3.489393
+  type: 'test'
+  ...
+# Subtest: native SEN primitive preserves negative design constraints in lawful construction
+ok 133 - native SEN primitive preserves negative design constraints in lawful construction
+  ---
+  duration_ms: 1.297105
+  type: 'test'
+  ...
+# Subtest: native SEN utter-evidence intake reuses SignCell instead of a leaf Mark parser
+ok 134 - native SEN utter-evidence intake reuses SignCell instead of a leaf Mark parser
+  ---
+  duration_ms: 5.961942
+  type: 'test'
+  ...
+# Subtest: native SEN Thing ingestion uses a portable upstream type document for all source-derived world types
+ok 135 - native SEN Thing ingestion uses a portable upstream type document for all source-derived world types
+  ---
+  duration_ms: 194.323669
+  type: 'test'
+  ...
+# Subtest: SEN evaluator executes Mark-origin world typing through the original Code interpreter
+ok 136 - SEN evaluator executes Mark-origin world typing through the original Code interpreter
+  ---
+  duration_ms: 5.897035
+  type: 'test'
+  ...
+# Subtest: native SEN consumes actual EAVT strata and preserves distinct adaptive episodes before fabrication
+ok 137 - native SEN consumes actual EAVT strata and preserves distinct adaptive episodes before fabrication
+  ---
+  duration_ms: 32.57644
+  type: 'test'
+  ...
+# Subtest: SEN source-trace refuses foreign projected signals and does not age on replay
+ok 138 - SEN source-trace refuses foreign projected signals and does not age on replay
+  ---
+  duration_ms: 11.626837
+  type: 'test'
+  ...
+# Subtest: source-trace never silently drops native episode Cells beside projected readings
+ok 139 - source-trace never silently drops native episode Cells beside projected readings
+  ---
+  duration_ms: 1.544146
+  type: 'test'
+  ...
+# Subtest: the original SEN source-trace operation returns native Cells with no observation episodes
+ok 140 - the original SEN source-trace operation returns native Cells with no observation episodes
+  ---
+  duration_ms: 57.769022
+  type: 'test'
+  ...
+# Subtest: native source-trace episodes retain exact EAVT witnesses and infer only posited values
+ok 141 - native source-trace episodes retain exact EAVT witnesses and infer only posited values
+  ---
+  duration_ms: 83.561829
+  type: 'test'
+  ...
+# Subtest: source-trace preserves distinct opposing episode sources without replay learning
+ok 142 - source-trace preserves distinct opposing episode sources without replay learning
+  ---
+  duration_ms: 46.218455
+  type: 'test'
+  ...
+# Subtest: native source-trace retains EAVT retractions and converse before Cell inference
+ok 143 - native source-trace retains EAVT retractions and converse before Cell inference
+  ---
+  duration_ms: 52.952139
+  type: 'test'
+  ...
+# Subtest: native trace refuses precisely the reference tokens erased by complete retraction
+ok 144 - native trace refuses precisely the reference tokens erased by complete retraction
+  ---
+  duration_ms: 21.220363
+  type: 'test'
+  ...
+# Subtest: native trace uses the existing typed Cell/design admission and model bounds
+ok 145 - native trace uses the existing typed Cell/design admission and model bounds
+  ---
+  duration_ms: 47.237553
+  type: 'test'
+  ...
+# Subtest: source-trace admits inert data before selecting a mode or inspecting native episodes
+ok 146 - source-trace admits inert data before selecting a mode or inspecting native episodes
+  ---
+  duration_ms: 43.810012
+  type: 'test'
+  ...
+# Subtest: embedded Cell replay rejects altered sources and invented inferred testimony
+ok 147 - embedded Cell replay rejects altered sources and invented inferred testimony
+  ---
+  duration_ms: 65.666671
+  type: 'test'
+  ...
+# Subtest: explicit legacy mode preserves projected behavior and never invents source witnesses
+ok 148 - explicit legacy mode preserves projected behavior and never invents source witnesses
+  ---
+  duration_ms: 6.587991
+  type: 'test'
+  ...
+# Subtest: proof-motion carrier receives both evidence colours and real predecessor indices
+ok 149 - proof-motion carrier receives both evidence colours and real predecessor indices
+  ---
+  duration_ms: 23.896197
+  type: 'test'
+  ...
+# Subtest: Lean obligation is only numerals and fixed source, never supplied strings
+ok 150 - Lean obligation is only numerals and fixed source, never supplied strings
+  ---
+  duration_ms: 14.837362
+  type: 'test'
+  ...
+# Subtest: structural-only orders and tampered source histories cannot become Lean obligations
+ok 151 - structural-only orders and tampered source histories cannot become Lean obligations
+  ---
+  duration_ms: 23.425562
+  type: 'test'
+  ...
+# Subtest: bounded Lean proof generator refuses arbitrarily large decisions
+ok 152 - bounded Lean proof generator refuses arbitrarily large decisions
+  ---
+  duration_ms: 155.367687
+  type: 'test'
+  ...
+# Subtest: source-replayed proof events realize bounded strict kinematic intervals
+ok 153 - source-replayed proof events realize bounded strict kinematic intervals
+  ---
+  duration_ms: 14.755428
+  type: 'test'
+  ...
+# Subtest: source-replayed hole readouts respect two evidence colors and causal comparability
+ok 154 - source-replayed hole readouts respect two evidence colors and causal comparability
+  ---
+  duration_ms: 20.736519
+  type: 'test'
+  ...
+# Subtest: absent readout, invalid selectors and replay tampering fail closed
+ok 155 - absent readout, invalid selectors and replay tampering fail closed
+  ---
+  duration_ms: 163.534845
+  type: 'test'
+  ...
+# Subtest: signed kinematic readout names EXACT interval endpoints, retaining all source witnesses
+ok 156 - signed kinematic readout names EXACT interval endpoints, retaining all source witnesses
+  ---
+  duration_ms: 42.385726
+  type: 'test'
+  ...
+# Subtest: quotient admission is measured on genuine signed proof-motion, not untrusted statements
+ok 157 - quotient admission is measured on genuine signed proof-motion, not untrusted statements
+  ---
+  duration_ms: 38.256653
+  type: 'test'
+  ...
+# Subtest: quotient targets are dense actual event identifiers at the native replay boundary
+ok 158 - quotient targets are dense actual event identifiers at the native replay boundary
+  ---
+  duration_ms: 46.961399
+  type: 'test'
+  ...
+# Subtest: quotient separates source observations with different licensed successors
+ok 159 - quotient separates source observations with different licensed successors
+  ---
+  duration_ms: 15.622615
+  type: 'test'
+  ...
+# Subtest: quotient reflects exact finite target paths from every admitted source representative
+ok 160 - quotient reflects exact finite target paths from every admitted source representative
+  ---
+  duration_ms: 41.768511
+  type: 'test'
+  ...
+# Subtest: the shipped SignCraft boundary exposes computation and leaves effects with their host
+ok 161 - the shipped SignCraft boundary exposes computation and leaves effects with their host
+  ---
+  duration_ms: 3.68729
+  type: 'test'
+  ...
+# Subtest: exports and packaged receivers close over shipped literal imports and runtime suppliers
+ok 162 - exports and packaged receivers close over shipped literal imports and runtime suppliers
+  ---
+  duration_ms: 22.634275
+  type: 'test'
+  ...
+# Subtest: each declared native payload exists, including the governing requirement records
+ok 163 - each declared native payload exists, including the governing requirement records
+  ---
+  duration_ms: 0.564056
+  type: 'test'
+  ...
+# Subtest: receiving closure refuses an omitted fixture and a development command exposure
+ok 164 - receiving closure refuses an omitted fixture and a development command exposure
+  ---
+  duration_ms: 13.046986
+  type: 'test'
+  ...
+# Subtest: the Sign-family source is a pure functional substrate, not an effects provider
+ok 165 - the Sign-family source is a pure functional substrate, not an effects provider
+  ---
+  duration_ms: 6.363123
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: absurd joinK absurd
+ok 166 - settlement keeps the FOUR value coordinate: absurd joinK absurd
+  ---
+  duration_ms: 7.941421
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: absurd joinK potential
+ok 167 - settlement keeps the FOUR value coordinate: absurd joinK potential
+  ---
+  duration_ms: 14.673415
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: absurd joinK active
+ok 168 - settlement keeps the FOUR value coordinate: absurd joinK active
+  ---
+  duration_ms: 8.567519
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: absurd joinK stable
+ok 169 - settlement keeps the FOUR value coordinate: absurd joinK stable
+  ---
+  duration_ms: 4.205768
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: potential joinK absurd
+ok 170 - settlement keeps the FOUR value coordinate: potential joinK absurd
+  ---
+  duration_ms: 1.162223
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: potential joinK potential
+ok 171 - settlement keeps the FOUR value coordinate: potential joinK potential
+  ---
+  duration_ms: 8.747761
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: potential joinK active
+ok 172 - settlement keeps the FOUR value coordinate: potential joinK active
+  ---
+  duration_ms: 2.466529
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: potential joinK stable
+ok 173 - settlement keeps the FOUR value coordinate: potential joinK stable
+  ---
+  duration_ms: 4.250695
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: active joinK absurd
+ok 174 - settlement keeps the FOUR value coordinate: active joinK absurd
+  ---
+  duration_ms: 1.590946
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: active joinK potential
+ok 175 - settlement keeps the FOUR value coordinate: active joinK potential
+  ---
+  duration_ms: 4.623174
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: active joinK active
+ok 176 - settlement keeps the FOUR value coordinate: active joinK active
+  ---
+  duration_ms: 7.295511
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: active joinK stable
+ok 177 - settlement keeps the FOUR value coordinate: active joinK stable
+  ---
+  duration_ms: 2.811416
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: stable joinK absurd
+ok 178 - settlement keeps the FOUR value coordinate: stable joinK absurd
+  ---
+  duration_ms: 0.774341
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: stable joinK potential
+ok 179 - settlement keeps the FOUR value coordinate: stable joinK potential
+  ---
+  duration_ms: 2.091497
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: stable joinK active
+ok 180 - settlement keeps the FOUR value coordinate: stable joinK active
+  ---
+  duration_ms: 2.49354
+  type: 'test'
+  ...
+# Subtest: settlement keeps the FOUR value coordinate: stable joinK stable
+ok 181 - settlement keeps the FOUR value coordinate: stable joinK stable
+  ---
+  duration_ms: 3.108572
+  type: 'test'
+  ...
+# Subtest: a native knowledge meet's value-only recovery awakens dependent rules
+ok 182 - a native knowledge meet's value-only recovery awakens dependent rules
+  ---
+  duration_ms: 16.159204
+  type: 'test'
+  ...
+# Subtest: value-only potential recovery retains independent contrary testimony
+ok 183 - value-only potential recovery retains independent contrary testimony
+  ---
+  duration_ms: 6.952596
+  type: 'test'
+  ...
+# Subtest: value-only active recovery retains independent contrary testimony
+ok 184 - value-only active recovery retains independent contrary testimony
+  ---
+  duration_ms: 2.306049
+  type: 'test'
+  ...
+# Subtest: native positing and document consumers receive the restored valuation without inventing witness events
+ok 185 - native positing and document consumers receive the restored valuation without inventing witness events
+  ---
+  duration_ms: 34.805358
+  type: 'test'
+  ...
+# Subtest: settlement replay refuses a falsely complete seed even when its rule witnesses already exist
+ok 186 - settlement replay refuses a falsely complete seed even when its rule witnesses already exist
+  ---
+  duration_ms: 8.489222
+  type: 'test'
+  ...
+# Subtest: settlement replay preserves a value-only stage through transport and rejects its omission
+ok 187 - settlement replay preserves a value-only stage through transport and rejects its omission
+  ---
+  duration_ms: 11.745995
+  type: 'test'
+  ...
+# Subtest: value-only replay preserves historical version-1 witnesses without relabeling them
+ok 188 - value-only replay preserves historical version-1 witnesses without relabeling them
+  ---
+  duration_ms: 23.088817
+  type: 'test'
+  ...
+# Subtest: derive actual electronic FOUR table from 16 Mark-configuration settlements, not a supplied table
+ok 189 - derive actual electronic FOUR table from 16 Mark-configuration settlements, not a supplied table
+  ---
+  duration_ms: 818.389812
+  type: 'test'
+  ...
+# Subtest: original source-generated law can drive real SignGraph netlist synthesis
+ok 190 - original source-generated law can drive real SignGraph netlist synthesis
+  ---
+  duration_ms: 2916.921626
+  type: 'test'
+  ...
+# Subtest: missing contrary Mark coordinate or predetermined input testimony refuses full FOUR electronics
+ok 191 - missing contrary Mark coordinate or predetermined input testimony refuses full FOUR electronics
+  ---
+  duration_ms: 1.880921
+  type: 'test'
+  ...
+# Subtest: no externally supplied library cannot be proclaimed a fabricated electronic device
+ok 192 - no externally supplied library cannot be proclaimed a fabricated electronic device
+  ---
+  duration_ms: 1089.514467
+  type: 'test'
+  ...
+# Subtest: source-rule change regenerates a distinct electronic response instead of reusing the old FOUR proof
+ok 193 - source-rule change regenerates a distinct electronic response instead of reusing the old FOUR proof
+  ---
+  duration_ms: 994.191493
+  type: 'test'
+  ...
+# Subtest: Areas and Worlds compose under Thing; Arenas and Tasks under Work and Thing
+ok 194 - Areas and Worlds compose under Thing; Arenas and Tasks under Work and Thing
+  ---
+  duration_ms: 188.17501
+  type: 'test'
+  ...
+# Subtest: typed identity and source presentations are distinct; classification does not appoint
+ok 195 - typed identity and source presentations are distinct; classification does not appoint
+  ---
+  duration_ms: 76.743233
+  type: 'test'
+  ...
+# Subtest: unknown parent, missing root membership and invalid kind requests refuse
+ok 196 - unknown parent, missing root membership and invalid kind requests refuse
+  ---
+  duration_ms: 33.495363
+  type: 'test'
+  ...
+# Subtest: original Code SEN executes native Thing -> Work and MUD space -> witnessed exits
+ok 197 - original Code SEN executes native Thing -> Work and MUD space -> witnessed exits
+  ---
+  duration_ms: 822.705965
+  type: 'test'
+  ...
+# Subtest: SEN refuses forged inherited properties and contradictory MUD directions
+ok 198 - SEN refuses forged inherited properties and contradictory MUD directions
+  ---
+  duration_ms: 389.581972
+  type: 'test'
+  ...
+# Subtest: SEN FOUR reader retains opposed independent material and quality witnesses
+ok 199 - SEN FOUR reader retains opposed independent material and quality witnesses
+  ---
+  duration_ms: 224.02909
+  type: 'test'
+  ...
+# Subtest: native source-admitted typed Things restore executable generic Thing-kinds
+ok 200 - native source-admitted typed Things restore executable generic Thing-kinds
+  ---
+  duration_ms: 57.859327
+  type: 'test'
+  ...
+# Subtest: distributed source witnesses cannot leave a disputed MUD exit traversable
+ok 201 - distributed source witnesses cannot leave a disputed MUD exit traversable
+  ---
+  duration_ms: 489.79361
+  type: 'test'
+  ...
+# Subtest: a new positive source Cell is not silently installed as location or a shortcut
+ok 202 - a new positive source Cell is not silently installed as location or a shortcut
+  ---
+  duration_ms: 509.119784
+  type: 'test'
+  ...
+# Subtest: one canonical type system expresses the source-approved Thing/Work hierarchy without subclassing rooms into worlds
+ok 203 - one canonical type system expresses the source-approved Thing/Work hierarchy without subclassing rooms into worlds
+  ---
+  duration_ms: 441.008458
+  type: 'test'
+  ...
+# Subtest: every Thing has native source Mark → Articulating Cell and a distinct original predication Cell
+ok 204 - every Thing has native source Mark → Articulating Cell and a distinct original predication Cell
+  ---
+  duration_ms: 30.800462
+  type: 'test'
+  ...
+# Subtest: a real Dimension with World and Area uses witnessed containment, whereas Work and Arena use type and parthood
+ok 205 - a real Dimension with World and Area uses witnessed containment, whereas Work and Arena use type and parthood
+  ---
+  duration_ms: 235.479696
+  type: 'test'
+  ...
+# Subtest: quality, behavior and geographical containment refuse kind-confused original statements
+ok 206 - quality, behavior and geographical containment refuse kind-confused original statements
+  ---
+  duration_ms: 215.399608
+  type: 'test'
+  ...
+# Subtest: native Thing, Type and relational-field admission prevents forged types, source roles and EAVT identities
+ok 207 - native Thing, Type and relational-field admission prevents forged types, source roles and EAVT identities
+  ---
+  duration_ms: 113.406969
+  type: 'test'
+  ...
+# Subtest: caller specialization can build beyond TAB/qtOps core without changing the original Thing declaration
+ok 208 - caller specialization can build beyond TAB/qtOps core without changing the original Thing declaration
+  ---
+  duration_ms: 82.157312
+  type: 'test'
+  ...
+# Subtest: TAB/qtOps additive construction grows qualities without replacing Thing identity or first source witness
+ok 209 - TAB/qtOps additive construction grows qualities without replacing Thing identity or first source witness
+  ---
+  duration_ms: 136.677944
+  type: 'test'
+  ...
+# Subtest: a TAB/qtOps Area actually composes containment and exits without inventing inverse facts
+ok 210 - a TAB/qtOps Area actually composes containment and exits without inventing inverse facts
+  ---
+  duration_ms: 285.257816
+  type: 'test'
+  ...
+# Subtest: source-qualified MUD territory follows Thing→Area→World→Dimension EAVT, not the class DAG
+ok 211 - source-qualified MUD territory follows Thing→Area→World→Dimension EAVT, not the class DAG
+  ---
+  duration_ms: 624.715921
+  type: 'test'
+  ...
+# Subtest: authored contains does not silently generate a located-in inverse
+ok 212 - authored contains does not silently generate a located-in inverse
+  ---
+  duration_ms: 229.886293
+  type: 'test'
+  ...
+# Subtest: opposed MUD location assertions remain visible and refuse certain territory
+ok 213 - opposed MUD location assertions remain visible and refuse certain territory
+  ---
+  duration_ms: 343.60522
+  type: 'test'
+  ...
+# Subtest: original area exits require direction-bearing token evidence, and refuse two east destinations
+ok 214 - original area exits require direction-bearing token evidence, and refuse two east destinations
+  ---
+  duration_ms: 420.800791
+  type: 'test'
+  ...
+# Subtest: foreign/fake composed Thing carriers cannot launder identities through MUD readers
+ok 215 - foreign/fake composed Thing carriers cannot launder identities through MUD readers
+  ---
+  duration_ms: 113.634354
+  type: 'test'
+  ...
+# Subtest: individually valid EAVT cannot replace the original relation Utterance source
+ok 216 - individually valid EAVT cannot replace the original relation Utterance source
+  ---
+  duration_ms: 178.354282
+  type: 'test'
+  ...
+# Subtest: batch source spatial projection qualifies an entire Thing world with one consistent source read
+ok 217 - batch source spatial projection qualifies an entire Thing world with one consistent source read
+  ---
+  duration_ms: 706.040774
+  type: 'test'
+  ...
+# Subtest: MUD readback refuses a borrowed Thing hash with altered qualities, attributes or original Articulating
+ok 218 - MUD readback refuses a borrowed Thing hash with altered qualities, attributes or original Articulating
+  ---
+  duration_ms: 454.26593
+  type: 'test'
+  ...
+# Subtest: opposed witnessed Thing quality evidence retains BOTH original SignCell sides
+ok 219 - opposed witnessed Thing quality evidence retains BOTH original SignCell sides
+  ---
+  duration_ms: 135.694252
+  type: 'test'
+  ...
+# Subtest: qualified Thing Cell evidence rejects alien endpoints, wrong kinds and forged Cells
+ok 220 - qualified Thing Cell evidence rejects alien endpoints, wrong kinds and forged Cells
+  ---
+  duration_ms: 331.637193
+  type: 'test'
+  ...
+1..220
+# tests 220
+# suites 0
+# pass 220
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7829.382946
