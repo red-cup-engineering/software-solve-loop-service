@@ -1,0 +1,107 @@
+{
+  "kind": "engineering-native-receiving-record",
+  "sourceBase": "b1bc2ee39dc59e5a09a0e21fbacce0bc36a1c592",
+  "purpose": "Receive the issued SignCraft valued-settlement correction through the original software solve loop and its existing independent receiving scenarios.",
+  "scope": "Actual locally packed solver candidate installed with its native frozen source lock and issued dependencies; no solver registry issuance, host activation or beneficiary acceptance is asserted.",
+  "package": {
+    "archive": "red-cup-engineering-software-solve-loop-service-0.1.0.tgz",
+    "sha256": "77ba231c73b1203cb2452f7c257e16d9eff990a3d0cda9f6af809dcab4ae94b9",
+    "integrity": "sha512-1/mu7KlOb68Tv5VJdJQZOMGwVxf4tbmBNyutu+WH/E/8TaXQhNoSzhNi7SCo8OQZOKjyVLfEnoWV/hflVigHLQ==",
+    "sourceEqualFiles": 17,
+    "mismatches": [],
+    "qualificationAuxiliaryInput": "Original pnpm-lock.yaml copied unchanged into unpacked package solely for frozen offline receiving; npm does not ship this lock."
+  },
+  "installedDirectSuppliers": [
+    {
+      "name": "@red-cup-engineering/javascript-node-services-section",
+      "declared": "0.4.1",
+      "version": "0.4.1",
+      "gitHead": "fc1832ad8350068cdd0246b86b7b174371349ba1"
+    },
+    {
+      "name": "@red-cup-engineering/signcraft",
+      "declared": "0.6.1-dev.517",
+      "version": "0.6.1-dev.517",
+      "gitHead": "9738794a2bab77a3474fdb98d54aab82553ea06b"
+    }
+  ],
+  "nativePackages": 122,
+  "node": "v24.22.1",
+  "pnpm": "11.25.0",
+  "lockSha256": "72fdcde827a1234edde40f22bb5e8549ac953f38756d90bd3291a854a4dd64cd",
+  "qualification": {
+    "solverReceivingFiles": 4,
+    "solver": {
+      "tests": 33,
+      "pass": 33,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "issuedSignCraftReceivingFiles": 22,
+    "issuedSignCraft": {
+      "tests": 210,
+      "pass": 210,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "command": "node --test --test-isolation=none --test-concurrency=1 --test-reporter=tap ...manifest.receivingTests",
+    "exitCode": 0
+  },
+  "signcraftSource": "https://github.com/red-cup-engineering/signcraft/commit/9738794a2bab77a3474fdb98d54aab82553ea06b",
+  "registryArtifact": {
+    "version": "0.6.1-dev.517",
+    "gitHead": "9738794a2bab77a3474fdb98d54aab82553ea06b",
+    "integrity": "sha512-2Bx4CEJUR5eUPL6qQL2NxBz6UZ4KMNlUWNhzswTZx+fQzfTRK2A1luOvGoar178fxZ1i3IICX64AWRP9V6x6jA==",
+    "sha256": "14174ed0d9f9e2f72bf5e94bd0f6b420e2978d30857eddfb7b5f6ffe1caaddc5",
+    "sourceComparison": {
+      "filesEqual": 79,
+      "nonManifestMismatches": [],
+      "manifestDifferences": {
+        "version": {
+          "source": "0.6.1-dev.5",
+          "issued": "0.6.1-dev.517"
+        },
+        "gitHead": {
+          "source": null,
+          "issued": "9738794a2bab77a3474fdb98d54aab82553ea06b"
+        }
+      }
+    }
+  },
+  "receivingBoundary": "The solve loop admits measured source Cells. The value-only settlement regression belongs to SignCraft; the original solver suite checks genuine edit, local test, independent rejection, restoration, corrected source receiving and opposition retention.",
+  "installationObservation": "An offline packed install could not find punycode/setimmediate in the local cache. The final frozen install used the original https://registry.561.group/ registry and succeeded with 120 reused packages and two downloads. No dependency or lock substitution was made.",
+  "receipts": {
+    "native-lock.log": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/native-lock.log",
+      "sha256": "563698d9afce1474e0835bd8db45451774186e467bdd9c1a62e1d845597aa9a3"
+    },
+    "native-install.log": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/native-install.log",
+      "sha256": "7c5408be3d2331e8326a4b8cbac09f76caed9ff617ca427e13df0b839396b6a2"
+    },
+    "packed-native-install.log": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/packed-native-install.log",
+      "sha256": "bb9483731fc358e83f01dfd9e185ff55bc8a5713f199b042fe017473c234bc14"
+    },
+    "packed-receiving.tap": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/packed-receiving.tap",
+      "sha256": "7dae6edf59306fc4c4c26d88e307cb95a9883f96625b7b4f9937a2ad1f9329dd"
+    },
+    "issued-signcraft-receiving.tap": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/issued-signcraft-receiving.tap",
+      "sha256": "18fc165a5ff76bce4f70ab7e753407bd8aa50f34529214c46d291f0ffbef5982"
+    },
+    "issued-signcraft-identity.json": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/issued-signcraft-identity.json",
+      "sha256": "c56ff36a9b8ac3d56b9f7962a3f373536fa9c35c24c98451d25db37c31b73aa3"
+    },
+    "packed-identity.json": {
+      "path": "data/records/receiving-records/2026-10-27-valued-settlement/packed-identity.json",
+      "sha256": "fd4495867d8212566ef8a0c247e99b8855b4524a9a9ba99c6bd123897bbb16d0"
+    }
+  }
+}

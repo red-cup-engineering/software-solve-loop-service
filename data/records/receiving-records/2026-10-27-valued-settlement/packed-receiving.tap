@@ -1,0 +1,208 @@
+TAP version 13
+# Subtest: a real changed module is tested, denied, restored, regenerated and independently received
+ok 1 - a real changed module is tested, denied, restored, regenerated and independently received
+  ---
+  duration_ms: 3797.412918
+  type: 'test'
+  ...
+# Subtest: an envelope for candidate A cannot deposit receiving credit for candidate B
+ok 2 - an envelope for candidate A cannot deposit receiving credit for candidate B
+  ---
+  duration_ms: 162.246083
+  type: 'test'
+  ...
+# Subtest: a mixed valid and non-measured receipt is rejected without partially adding its valid support
+ok 3 - a mixed valid and non-measured receipt is rejected without partially adding its valid support
+  ---
+  duration_ms: 67.16651
+  type: 'test'
+  ...
+# Subtest: Requirement source retention preserves additional clauses and resists later caller mutation
+ok 4 - Requirement source retention preserves additional clauses and resists later caller mutation
+  ---
+  duration_ms: 33.246479
+  type: 'test'
+  ...
+# Subtest: a test runner changing the candidate cut cannot verify or accept the earlier candidate
+ok 5 - a test runner changing the candidate cut cannot verify or accept the earlier candidate
+  ---
+  duration_ms: 1073.246424
+  type: 'test'
+  ...
+# Subtest: receiving cannot accept a candidate changed during the receiving operation
+ok 6 - receiving cannot accept a candidate changed during the receiving operation
+  ---
+  duration_ms: 1361.007507
+  type: 'test'
+  ...
+# Subtest: a rollback success flag cannot substitute for the original source revision
+ok 7 - a rollback success flag cannot substitute for the original source revision
+  ---
+  duration_ms: 1031.025417
+  type: 'test'
+  ...
+# Subtest: a refused envelope remains a structural source observation without condition credit
+ok 8 - a refused envelope remains a structural source observation without condition credit
+  ---
+  duration_ms: 1483.154909
+  type: 'test'
+  ...
+# Subtest: test observations retain original structured evidence beyond the passed flag and text
+ok 9 - test observations retain original structured evidence beyond the passed flag and text
+  ---
+  duration_ms: 639.785708
+  type: 'test'
+  ...
+# Subtest: a mutating buildContext exception preserves observed recovery state and stops producers
+ok 10 - a mutating buildContext exception preserves observed recovery state and stops producers
+  ---
+  duration_ms: 204.042474
+  type: 'test'
+  ...
+# Subtest: a mutating generatePatch exception preserves observed recovery state and stops producers
+ok 11 - a mutating generatePatch exception preserves observed recovery state and stops producers
+  ---
+  duration_ms: 317.405762
+  type: 'test'
+  ...
+# Subtest: a mutating refine exception preserves observed recovery state and stops producers
+ok 12 - a mutating refine exception preserves observed recovery state and stops producers
+  ---
+  duration_ms: 323.079304
+  type: 'test'
+  ...
+# Subtest: noncanonical tests output is refused through actual source restoration
+ok 13 - noncanonical tests output is refused through actual source restoration
+  ---
+  duration_ms: 866.542811
+  type: 'test'
+  ...
+# Subtest: noncanonical receiving output is refused through actual source restoration
+ok 14 - noncanonical receiving output is refused through actual source restoration
+  ---
+  duration_ms: 1183.998383
+  type: 'test'
+  ...
+# Subtest: passing tests produce native evidence and verification, never acceptance
+ok 15 - passing tests produce native evidence and verification, never acceptance
+  ---
+  duration_ms: 1087.102034
+  type: 'test'
+  ...
+# Subtest: all original direct measured receipt conditions permit acceptance
+ok 16 - all original direct measured receipt conditions permit acceptance
+  ---
+  duration_ms: 2462.360322
+  type: 'test'
+  ...
+# Subtest: an incomplete receipt leaves the exact missing condition unknown
+ok 17 - an incomplete receipt leaves the exact missing condition unknown
+  ---
+  duration_ms: 1452.207238
+  type: 'test'
+  ...
+# Subtest: old candidate, old Requirement, and wrong receiver cannot be accepted
+ok 18 - old candidate, old Requirement, and wrong receiver cannot be accepted
+  ---
+  duration_ms: 4480.493339
+  type: 'test'
+  ...
+# Subtest: written positive values without evidence cannot become receiving testimony
+ok 19 - written positive values without evidence cannot become receiving testimony
+  ---
+  duration_ms: 1310.471213
+  type: 'test'
+  ...
+# Subtest: initial sensor support cannot masquerade as independent receiving
+ok 20 - initial sensor support cannot masquerade as independent receiving
+  ---
+  duration_ms: 1491.069773
+  type: 'test'
+  ...
+# Subtest: source opposition survives a positive receipt and halts as contested
+ok 21 - source opposition survives a positive receipt and halts as contested
+  ---
+  duration_ms: 2447.341572
+  type: 'test'
+  ...
+# Subtest: denial is retained while a different candidate can be received
+ok 22 - denial is retained while a different candidate can be received
+  ---
+  duration_ms: 4990.026449
+  type: 'test'
+  ...
+# Subtest: receipt replay is idempotent and source values are retained
+ok 23 - receipt replay is idempotent and source values are retained
+  ---
+  duration_ms: 739.493614
+  type: 'test'
+  ...
+# Subtest: self receiving and missing original source fail before effects
+ok 24 - self receiving and missing original source fail before effects
+  ---
+  duration_ms: 1.904279
+  type: 'test'
+  ...
+# Subtest: failed generated code is rolled back before the next generation reads its worktree
+ok 25 - failed generated code is rolled back before the next generation reads its worktree
+  ---
+  duration_ms: 2065.814352
+  type: 'test'
+  ...
+# Subtest: a failed test without rollback stops before further patches or expensive refinement
+ok 26 - a failed test without rollback stops before further patches or expensive refinement
+  ---
+  duration_ms: 827.475118
+  type: 'test'
+  ...
+# Subtest: throwing or partially refused appliers cannot cascade potentially dirty source
+ok 27 - throwing or partially refused appliers cannot cascade potentially dirty source
+  ---
+  duration_ms: 802.227908
+  type: 'test'
+  ...
+# Subtest: cleanly refused source edit remains a valid retry opportunity
+ok 28 - cleanly refused source edit remains a valid retry opportunity
+  ---
+  duration_ms: 1131.03977
+  type: 'test'
+  ...
+# Subtest: dirty scripted resolver does not trigger model inference when its test fails
+ok 29 - dirty scripted resolver does not trigger model inference when its test fails
+  ---
+  duration_ms: 609.239293
+  type: 'test'
+  ...
+# Subtest: script-first success does not spend inference and selection is dependency-free
+ok 30 - script-first success does not spend inference and selection is dependency-free
+  ---
+  duration_ms: 471.610818
+  type: 'test'
+  ...
+# Subtest: test-runner errors still require a verified rollback before retry
+ok 31 - test-runner errors still require a verified rollback before retry
+  ---
+  duration_ms: 1826.616633
+  type: 'test'
+  ...
+# Subtest: market refinement receives a clean workspace and the budget stays bounded
+ok 32 - market refinement receives a clean workspace and the budget stays bounded
+  ---
+  duration_ms: 703.634549
+  type: 'test'
+  ...
+# Subtest: mutating resolver selection stops before context construction or another producer
+ok 33 - mutating resolver selection stops before context construction or another producer
+  ---
+  duration_ms: 588.485706
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 42259.379361
