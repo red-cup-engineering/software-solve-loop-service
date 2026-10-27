@@ -12,8 +12,8 @@ importers:
         specifier: 0.4.1
         version: 0.4.1
       '@red-cup-engineering/signcraft':
-        specifier: 0.6.1-dev.517
-        version: 0.6.1-dev.517
+        specifier: 0.6.2-dev.522
+        version: 0.6.2-dev.522
 
 packages:
 
@@ -327,8 +327,8 @@ packages:
   '@red-cup-engineering/signchain@0.4.2-dev.72':
     resolution: {integrity: sha512-TRSkATDUl+rhbf0nLVKJaT9oC3ZE5rfwn8O2dM3klO7VN/uKBY/0afVt7mfFQDO/F0qBf4AdiVA/L5Tg0Uu5kg==}
 
-  '@red-cup-engineering/signcraft@0.6.1-dev.517':
-    resolution: {integrity: sha512-2Bx4CEJUR5eUPL6qQL2NxBz6UZ4KMNlUWNhzswTZx+fQzfTRK2A1luOvGoar178fxZ1i3IICX64AWRP9V6x6jA==}
+  '@red-cup-engineering/signcraft@0.6.2-dev.522':
+    resolution: {integrity: sha512-eaHboIOKYQOfyEdGlDpwLmO4VEEvq1CB+vfCttj/c0kWMaAgB1mKCm84GuwXpCBmjH6m94gYXd06fXob5UZk0Q==}
 
   '@red-cup-engineering/signgraph@0.7.1-dev.364':
     resolution: {integrity: sha512-vtIVY3h3dVq6dz9X9pzLABORPDT31V4e7YD62KCorJGEcPb1xwLenNkTAglga+eRmWpHRQulx1KTqysSA3s2Tg==}
@@ -1157,7 +1157,7 @@ snapshots:
       '@red-cup-engineering/semiotic-eavt-services-section': 0.3.2
       '@red-cup-engineering/signcell': 0.13.1-dev.212
 
-  '@red-cup-engineering/signcraft@0.6.1-dev.517':
+  '@red-cup-engineering/signcraft@0.6.2-dev.522':
     dependencies:
       '@red-cup-engineering/computer-code-engineering-services-section': 0.1.2
       '@red-cup-engineering/computer-data-engineering-services-section': 0.7.1

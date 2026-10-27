@@ -1,0 +1,150 @@
+{
+  "repository": "red-cup-engineering/software-solve-loop-service",
+  "sourceCommit": "988b45dac259f72a18d8e394e1e473c40f96cf70",
+  "package": "@red-cup-engineering/software-solve-loop-service",
+  "version": "0.1.0",
+  "filename": "red-cup-engineering-software-solve-loop-service-0.1.0.tgz",
+  "archiveSha256": "22fffc9b0e3186555fd638471bce72d80d947ef8b81de3f0321b345c565bc78f",
+  "archiveIntegrity": "sha512-CC5HVeY/umAWV4uFzKNKDDe6cWzvt91NvJXPjENv36ycDjQUtHCznjAl8bTMLj+TgBA62rpny1s4/ZqptbWhRw==",
+  "payloadFileCount": 17,
+  "allPayloadBytesMatchCandidate": true,
+  "originalPayloadUnchangedExceptSignCraftPin": true,
+  "files": [
+    {
+      "path": "LICENSE",
+      "gitBlob": "61dbf67e6e610419422691ddd728f2c3647608bb",
+      "sha256": "e264f6d8d0c46911b9ca7a2a46a10fd1a2e7b64822f236b04a6afa7ee79083af",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "content/agent-card-signing/jwks.json",
+      "gitBlob": "d21c57c3ca6e46ad02328142d0695a12921f5e27",
+      "sha256": "ee41193c11b2062270bb572ab9ae09e1dd02d047c29259a6447dfea26a107c2a",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "package.json",
+      "gitBlob": "679606fe1b775c4ee2e6a45bdd7aa5a79bb89167",
+      "sha256": "63981f4e5ddf6b1748915c890aeaaa61ef082386063bdb1a27517df38abb0ffb",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": false
+    },
+    {
+      "path": "content/agent-cards/software-solve-loop-service.json",
+      "gitBlob": "e454c51b951ff1578ea09da99fd19cb580a05e95",
+      "sha256": "9501bb58785599497a18d676b4ff069c3923cb76683d330d74fd85a587228ee7",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "specifications/cell-alignment-implementation.md",
+      "gitBlob": "4679c1280603780cccb6a7383b9e0148d6a41ba2",
+      "sha256": "9c54982ffbdf52ee467be847ec704998c9fb8b042bf7adb1a9e184a74183fb59",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "specifications/independent-receiving-review.md",
+      "gitBlob": "a87894c8aca56fa39ffa574c4b29da92f63687e4",
+      "sha256": "388380aeeac99d48948833cf290b10bebef1cf52684d6d523a861d93c3a2a631",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "specifications/market-requirement-source-lineage.md",
+      "gitBlob": "fa21ab1dcf174b55d1ec78e91c6cff29767d9dac",
+      "sha256": "25ff97d4f988de021cad20f309882c6721ea4277125d7c069a1c1c18623ef952",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "README.md",
+      "gitBlob": "337a47218fd1f73d495a9f9b874cb4770cbb836e",
+      "sha256": "114271d3f7a54ba94b020d95ae93192d506a9c7f9b15e5ca0aa1b1a766d503ea",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "specifications/requirement-settlement.md",
+      "gitBlob": "f245a435e8ad3733602ed394ea930c968a2ad34f",
+      "sha256": "d3cd9664785112d29f562bd06b34b2fe4b361a5c7f1cddfa365dbb5ecbbae9b4",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "src/evidence.mjs",
+      "gitBlob": "4fd9b1ec7d46161ea4c3d5fb4a002c78b7a46530",
+      "sha256": "05013a8982cab3ba88a288b3c55a5a68fa6c44ebd69a5252cf56864559d840b0",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "test/local-source-receiving.test.mjs",
+      "gitBlob": "cf1f3b6a446fa1057119e16fc4ea81809fca0381",
+      "sha256": "533ea6a7680bed19403fa0758dd047a362102d3abbbc414e75a4decb770bfda2",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "test/receiving-boundaries.test.mjs",
+      "gitBlob": "6de163d0ce1084421786233cc4c94cf48faac517",
+      "sha256": "c80060d97221f41ade1f1e4349cd36742fadd6be83c42254d314a2fce144db27",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "test/requirement-evidence.test.mjs",
+      "gitBlob": "4e8fa8b4a2449fa17fb4757f801e4b7eba54d707",
+      "sha256": "766350c2496108890d2481397699614991578a378a5a2533446aed921c9d66a0",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "src/resolvers.mjs",
+      "gitBlob": "255e700774dbb67fbce583346dbd02892ff39a6b",
+      "sha256": "96cc2fd907c93ba4191b82ce693080dca91f4f0e62e3466a43417e88a685ea31",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "src/solve-loop.mjs",
+      "gitBlob": "c650f59bee9169bcd9152174ebe2edb58a3aaad0",
+      "sha256": "a89338af8bbd465a894660887a95246b93c268614ad89debfc4f8bdd65f2b731",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "test/solve-loop.test.mjs",
+      "gitBlob": "8a929a2f4c9f7bfb64e652f0106181ea5e1069a7",
+      "sha256": "24bd940428258cfd88bc48ef7d5621660096cc27facb6c1f87a3a0a6e45c930d",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "gitBlob": "d41528e77994888cffaa3e91d8c6363537c68fc3",
+      "sha256": "272db6f4804521f137cbfbb6a2386905a4c42de80620107a6abe24982f0f3625",
+      "sourceByteEqual": true,
+      "originalPayloadUnchanged": true
+    }
+  ],
+  "frozenInstallInputs": [
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "26fb5750c0ae0e5b7426a4779b32f750d6b9f1b2cde8968ed156c6ec482e129c",
+      "purpose": "original frozen-install input, supplied separately if excluded by npm pack"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "272db6f4804521f137cbfbb6a2386905a4c42de80620107a6abe24982f0f3625",
+      "purpose": "original frozen-install input, supplied separately if excluded by npm pack"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2",
+      "purpose": "original frozen-install input, supplied separately if excluded by npm pack"
+    }
+  ]
+}

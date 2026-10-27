@@ -1,0 +1,622 @@
+{
+  "packageCount": 122,
+  "unchangedOtherProviders": 121,
+  "signcraft": {
+    "version": "0.6.2-dev.522",
+    "gitHead": "85dfd1f8593ffbf7468099d355d5914c0418a981",
+    "issuedPayloadFilesVerified": 80
+  },
+  "javascriptNodeVersion": "0.4.1",
+  "providers": [
+    {
+      "name": "@cto.af/wtf8",
+      "version": "0.0.6",
+      "manifestSha256": "eb38688d449e6746ce1817af30e72d36c00e70f8cc657487eb1c0ce5c6386a2b"
+    },
+    {
+      "name": "@hyperjump/browser",
+      "version": "1.5.1",
+      "manifestSha256": "359591c34f972302aae61f558a12ec04fcb16079bd537af667aa2b6a8615ee8d"
+    },
+    {
+      "name": "@hyperjump/json-pointer",
+      "version": "1.1.3",
+      "manifestSha256": "94afad2072ca801c3497b43edde0d3268c55c4d1e2264cdb93d7c88c7682bac4"
+    },
+    {
+      "name": "@hyperjump/json-schema",
+      "version": "1.18.0",
+      "manifestSha256": "a5d08e207a447875c0d78ebfa706e1342878d170db04c46fbb9e7669f3f95738"
+    },
+    {
+      "name": "@hyperjump/json-schema-formats",
+      "version": "1.1.0",
+      "manifestSha256": "a053466e106e7b0fecbbc5f6a7f90df8d5609d45404ed802b534c153714ed93e"
+    },
+    {
+      "name": "@hyperjump/pact",
+      "version": "1.4.0",
+      "manifestSha256": "68dd9a545a3a69ea25cf00d09abf063ec8d3c284184affc52bf4a90e9fb10379"
+    },
+    {
+      "name": "@hyperjump/uri",
+      "version": "1.3.9",
+      "manifestSha256": "75f7d3e81c36cb55374c3251f9ab61445b2e3a2414ee5650acf1627f76edb45f"
+    },
+    {
+      "name": "@lenticule-science/articulating",
+      "version": "0.2.2",
+      "manifestSha256": "b3862c31ca535434cd0f369488b11bd519f35fce12b2b9035c8297cbd2a14976"
+    },
+    {
+      "name": "@red-cup-engineering/cbor-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "e967ffa7703297662ce57efcc05937681f46a75c012c49f17e8c222b7242be49"
+    },
+    {
+      "name": "@red-cup-engineering/computer-article-engineering-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "e2aa380ace97e6d437d073b799f1f17061a0651aca0a481c4528249fe659879e"
+    },
+    {
+      "name": "@red-cup-engineering/computer-article-engineering-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "3c2472e46a20a9905a0b7687d7462dca35989736feb33763bd98d529a317bc13"
+    },
+    {
+      "name": "@red-cup-engineering/computer-code-engineering-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "a321bd7f6007af98179887a797580e074b3ff250962e0a81f6db05c8aefb0c9b"
+    },
+    {
+      "name": "@red-cup-engineering/computer-code-engineering-services-section",
+      "version": "0.2.1",
+      "manifestSha256": "4a6b91389c5a84d15376b24e63612e224a2773da0a344b6a5ce3f149c349d55a"
+    },
+    {
+      "name": "@red-cup-engineering/computer-content-address-engineering-services-section",
+      "version": "0.2.0",
+      "manifestSha256": "cff45a5b99d892048b7e50ec4516e435f1c00cbe7d0e316e9307fe10fdc400c4"
+    },
+    {
+      "name": "@red-cup-engineering/computer-content-engineering-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "8c3fcefb26e2e1b7b3309e9e8655c97e34a0b7f70328490f2ec4af808df642dc"
+    },
+    {
+      "name": "@red-cup-engineering/computer-data-engineering-services-section",
+      "version": "0.2.0",
+      "manifestSha256": "d054adc1d03cd518eff79b3e25e3cacaf2ec914e45dde17df80e9196c8063e3c"
+    },
+    {
+      "name": "@red-cup-engineering/computer-data-engineering-services-section",
+      "version": "0.2.4",
+      "manifestSha256": "3eadc6070424d2423edf2d334d9606d6464a70d158d7e7f1434d46a527f96b21"
+    },
+    {
+      "name": "@red-cup-engineering/computer-data-engineering-services-section",
+      "version": "0.3.1",
+      "manifestSha256": "5f2467568734022f482aa4db9fd875c74d507781088634452c3abbda1952bd90"
+    },
+    {
+      "name": "@red-cup-engineering/computer-data-engineering-services-section",
+      "version": "0.7.1",
+      "manifestSha256": "563eabcb8919db7123f1092dd47906ecdfcd86ea1ef5706fac708c91d8478bc7"
+    },
+    {
+      "name": "@red-cup-engineering/computer-file-engineering-services-section",
+      "version": "0.4.0",
+      "manifestSha256": "6d5f429a0780668747b1fc04db5e8d62284f1187109b4a4946cadf6e9694b64e"
+    },
+    {
+      "name": "@red-cup-engineering/computer-file-engineering-services-section",
+      "version": "0.5.0",
+      "manifestSha256": "7e5f6bf7264b7506c04ef7557057a977bac16c8e387548515506be3cad3968dd"
+    },
+    {
+      "name": "@red-cup-engineering/computer-filepath-engineering-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "9b9a36059f033250dd8847aa80fdbaeaae39184a06c0edcddc9bab7c85244261"
+    },
+    {
+      "name": "@red-cup-engineering/computer-serialized-content-engineering-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "2d50ce5cbe363e252927afa758aba73086867f7489e03dc0ebd2fc0ccb344cf1"
+    },
+    {
+      "name": "@red-cup-engineering/computer-text-content-engineering-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "22738dc6b73e2d03f61f67dfa4d5e0262de379bc89833ece463654602ab1df41"
+    },
+    {
+      "name": "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "c8b7bd77d844bd23fae39a93974a0f5943c9049b69e9b34e2b6b28641870f594"
+    },
+    {
+      "name": "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "cab249d078be51d500e4ab51089100fe95d7e62a08d23bbac85a3aca8a51b3f2"
+    },
+    {
+      "name": "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "71faa7223998577c157dce9c0ff8bdc368edfb6d70b008e407c085b0d1f7402d"
+    },
+    {
+      "name": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section",
+      "version": "0.3.1",
+      "manifestSha256": "a566ae04f9addac8538c1b3a8d23414305de15961c1facfafb5f99751ffd3dd7"
+    },
+    {
+      "name": "@red-cup-engineering/cryptographic-integrity-service",
+      "version": "0.1.3",
+      "manifestSha256": "55fd72504111e58c31d38b7e7a2c915d7ab8746b25ec0906a987b4c6fd279adb"
+    },
+    {
+      "name": "@red-cup-engineering/csl-json-services-section",
+      "version": "0.2.0",
+      "manifestSha256": "9aa2c04872532444e22dda9c048d8b571a62a631590f1620f55a7610910bab3f"
+    },
+    {
+      "name": "@red-cup-engineering/csl-json-services-section",
+      "version": "0.2.1",
+      "manifestSha256": "9cd9bb1b41f2e541b03343be369d48225bf1fb0ef00f7d69a9e75e14df179ec2"
+    },
+    {
+      "name": "@red-cup-engineering/csl-json-services-section",
+      "version": "0.2.2",
+      "manifestSha256": "4258ed59326ea1260ad690682d174d476e05f279785233b64c4769995a492904"
+    },
+    {
+      "name": "@red-cup-engineering/css-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "b1b15e2c4c0a2422bad28f66952609a1f3d543678937a070d571c47ec1da7b3f"
+    },
+    {
+      "name": "@red-cup-engineering/css-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "2df483ac8de9519bf4fac7e22919dbee1c9f138f68301309c7e264a9d3e495dd"
+    },
+    {
+      "name": "@red-cup-engineering/css-services-section",
+      "version": "0.1.3",
+      "manifestSha256": "9b3d5025225ead704ef68efd9f18ebdc31f01c0394bffce1492ff2d6be59e319"
+    },
+    {
+      "name": "@red-cup-engineering/datom-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "e381414a52335f2234f003125c0afc8b1eccd53432de16f120e347d30eb91491"
+    },
+    {
+      "name": "@red-cup-engineering/datom-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "947408551e8a0acaba6cd087e3335e242f8812d7d419fb514f0391ef027ebecf"
+    },
+    {
+      "name": "@red-cup-engineering/eavt-services-section",
+      "version": "0.10.4",
+      "manifestSha256": "c969e4702819aa7f713bfdbf1a471312040f7255e14145b7bb1a2e884a521e21"
+    },
+    {
+      "name": "@red-cup-engineering/eavt-services-section",
+      "version": "0.11.0",
+      "manifestSha256": "07b0aab00b1fec97f2e4d09541971e8843b7efd2361d2f7934df286cd2f92a1c"
+    },
+    {
+      "name": "@red-cup-engineering/eavt-services-section",
+      "version": "0.11.1",
+      "manifestSha256": "8755bc1d5dde952ab334073d43ba599de456b57a199e3e2554f03a999f9a6c65"
+    },
+    {
+      "name": "@red-cup-engineering/exact-number-data-service",
+      "version": "0.1.1",
+      "manifestSha256": "649d29f830c72470d7dccd1465b6b4c5f200db1f65d4e1841fdcf9399bbb8b33"
+    },
+    {
+      "name": "@red-cup-engineering/exact-number-data-service",
+      "version": "0.1.2",
+      "manifestSha256": "7997941d1d0acca45cc2e8d561127cf05f687dbb8d17fe6554b90f0a4d57ed61"
+    },
+    {
+      "name": "@red-cup-engineering/exact-number-data-service",
+      "version": "0.1.7",
+      "manifestSha256": "fee44ec85f799bfa7733f3b1e48ed9cce06bde6c70f9ca218e6a12cb22e3bbc1"
+    },
+    {
+      "name": "@red-cup-engineering/html-engineering-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "88a1f3c731ea801be2be974f8765cbe8752231fc3c37b63ac90818136ecaf26b"
+    },
+    {
+      "name": "@red-cup-engineering/html-engineering-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "40faf9231db7d2a8852e1506abf4d270f210071ccb74b13ddc9be120477b69d8"
+    },
+    {
+      "name": "@red-cup-engineering/html-engineering-services-section",
+      "version": "0.1.3",
+      "manifestSha256": "2cf884d4873021edb08e360e8e89fb680460b7c2a498cf02ce0d70dd26847583"
+    },
+    {
+      "name": "@red-cup-engineering/html-structural-projection-service",
+      "version": "0.3.1",
+      "manifestSha256": "867a17a953f7844f266f06e5b127c46308fb767e3cf6d5aaacb614479857aa11"
+    },
+    {
+      "name": "@red-cup-engineering/html-structural-projection-service",
+      "version": "0.3.2",
+      "manifestSha256": "02bd446e0a200612a82033809e0dc81b33f366494104880362ef358dc055ad9f"
+    },
+    {
+      "name": "@red-cup-engineering/html-structural-projection-service",
+      "version": "0.3.3",
+      "manifestSha256": "81dc7fb80345da79a5ce7712dbdfd607af0d7b05f1c87324eb5f95b251256e27"
+    },
+    {
+      "name": "@red-cup-engineering/javascript-module-closure-service",
+      "version": "0.1.0",
+      "manifestSha256": "375f2077dc738a9ba5bc1f4448111cda4e566f599773fbcb465ce7789635c789"
+    },
+    {
+      "name": "@red-cup-engineering/javascript-node-operation-service",
+      "version": "0.1.0",
+      "manifestSha256": "2ad19367af5931f39ccf511988b9924eff187551ab277e0d26fe317fb281b11c"
+    },
+    {
+      "name": "@red-cup-engineering/javascript-node-services-section",
+      "version": "0.3.2",
+      "manifestSha256": "b9fc01eee9dcea51c3910091eff398f43d6da5b22a5b866c435f44ea4b1b3108"
+    },
+    {
+      "name": "@red-cup-engineering/javascript-node-services-section",
+      "version": "0.4.1",
+      "manifestSha256": "cfa2dc7d197bf8f328806ebcabb70ffd7934b219e794b363c49ed22768c3536b"
+    },
+    {
+      "name": "@red-cup-engineering/javascript-parser-service",
+      "version": "0.1.0",
+      "manifestSha256": "3dd6c443c5cf6765e61716b01b14fa28e6501a6c2ae61340103b43ce98a710b4"
+    },
+    {
+      "name": "@red-cup-engineering/json-codec-service",
+      "version": "0.1.6",
+      "manifestSha256": "19fae3c4167132f9e7c1b0dd4cb34ef8a8266c58d8f2e73ea12537f390e08b3e"
+    },
+    {
+      "name": "@red-cup-engineering/json-schema-services-section",
+      "version": "0.5.0",
+      "manifestSha256": "e2e9018c1e2b1cf8bb90072932cae24d26f4f9748fad812627a09a8429d1c2e7"
+    },
+    {
+      "name": "@red-cup-engineering/json-services-section",
+      "version": "0.4.0",
+      "manifestSha256": "1b5945abba04ed87ad57a2a97586ee03b4742d8539fe43c2fabdec1161c181be"
+    },
+    {
+      "name": "@red-cup-engineering/jsonl-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "1ad55396a51c1fa122e2c23d72e2e383d7b17076182261ceca3d0eb2a1576fbf"
+    },
+    {
+      "name": "@red-cup-engineering/markdown-engineering-services-section",
+      "version": "0.5.1",
+      "manifestSha256": "ff14a3badd68715a1d8e46251e58687f29bf1d5bfb65544a0b375c46cfce6028"
+    },
+    {
+      "name": "@red-cup-engineering/markdown-engineering-services-section",
+      "version": "0.5.2",
+      "manifestSha256": "d764e36e1519db0e99da7d76f4e824e5944dbaa9467ccf33ad2fe11b1cb6957e"
+    },
+    {
+      "name": "@red-cup-engineering/markdown-engineering-services-section",
+      "version": "0.5.3",
+      "manifestSha256": "3c9dd5d7651a1c59be4bc0e905ac3ceae9819756a663ce73dd0968587e8f8475"
+    },
+    {
+      "name": "@red-cup-engineering/metrologic",
+      "version": "0.13.0",
+      "manifestSha256": "8c9bf0bc7553f965009475af4de1e28a135e6c432c0fe545ad2ea37cfd07176b"
+    },
+    {
+      "name": "@red-cup-engineering/metrologic",
+      "version": "0.14.3-dev.1364",
+      "manifestSha256": "5312d764a56065c8e72ce552ce9bea32efa435aa3c5f00d8a402ec3ea805766c"
+    },
+    {
+      "name": "@red-cup-engineering/metrologic",
+      "version": "0.14.3-dev.1377",
+      "manifestSha256": "d7100f40a701503bc820356a605fbc41e17fe0d817f74386046182ece5a4ecd6"
+    },
+    {
+      "name": "@red-cup-engineering/metrologic",
+      "version": "0.3.0",
+      "manifestSha256": "7e157aed90719274a794237becd244e8b004db0e3d8b631171975198fd3e22be"
+    },
+    {
+      "name": "@red-cup-engineering/metrologic",
+      "version": "0.4.0",
+      "manifestSha256": "8dbc510c7b92f74d84048a5d083195ed4f2b2ad0c51312925db421c4774b1793"
+    },
+    {
+      "name": "@red-cup-engineering/node-process-services-section",
+      "version": "0.2.2",
+      "manifestSha256": "4eaa4f72059022e15a0668495a6640bc46964ee5687bf883ad6c8407d1381b77"
+    },
+    {
+      "name": "@red-cup-engineering/read-javascript-file-export-documentation-service",
+      "version": "0.1.5",
+      "manifestSha256": "1e31299bc608deef3a8f43429f889fd945c4905c8eb9444e23d848683b7492c2"
+    },
+    {
+      "name": "@red-cup-engineering/read-markdown-features-service",
+      "version": "0.2.0",
+      "manifestSha256": "78ec7141cca71eac64cbd1e35c534b08477b12c23dfd9ea0fae03b5c03281a1c"
+    },
+    {
+      "name": "@red-cup-engineering/read-markdown-frontmatter-service",
+      "version": "0.2.0",
+      "manifestSha256": "3ae56332963143d8471b7a5c35651ae44db05fa23005e18f0ffe319d0835b1e4"
+    },
+    {
+      "name": "@red-cup-engineering/read-markdown-structure-service",
+      "version": "0.2.0",
+      "manifestSha256": "4a27f3cc607dcc44627b25139c86e4201d4b596801cf38cbc91c406e96d0079c"
+    },
+    {
+      "name": "@red-cup-engineering/semiotic-content-address",
+      "version": "0.1.0",
+      "manifestSha256": "1f8e557017362609e3dd4028d92fe8f3ccda7b041c2596993e4ac8a781cfc8f7"
+    },
+    {
+      "name": "@red-cup-engineering/semiotic-content-address",
+      "version": "0.1.1",
+      "manifestSha256": "808a818b081125ddaeca3d8022a677150e7bd412ffe30f4fe7f153c596f42f31"
+    },
+    {
+      "name": "@red-cup-engineering/semiotic-content-address",
+      "version": "0.1.2-dev.31",
+      "manifestSha256": "927a9858fa630f0888dac7dc29361dc229e6c082033431d16b0528d4b87db539"
+    },
+    {
+      "name": "@red-cup-engineering/semiotic-eavt-services-section",
+      "version": "0.1.0",
+      "manifestSha256": "6ef49d36048aaacbe3c9cbc05bdcc50931f3bb61ba82bc2157b3b6e45e62097d"
+    },
+    {
+      "name": "@red-cup-engineering/semiotic-eavt-services-section",
+      "version": "0.3.2",
+      "manifestSha256": "b2a55e2ab735fa9d7c3b17a449e9726be994fa10b75913d45f6f55559e0a072d"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.1.0",
+      "manifestSha256": "650b4dc3d844eea97b80256fc38cbfc948b9bcec06487920d5948702defef9f8"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.11.1",
+      "manifestSha256": "38fdb6224969a8933c586627bef0e3014fd1f09e23dd166837923c5b1747e406"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.13.1-dev.212",
+      "manifestSha256": "11ab9b9aed62cc1a593d11d7a8833e7402c64f21f60c6eee9c5eff9841387d56"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.2.0",
+      "manifestSha256": "bd547f881a0882fb96c0c879436a21b7421b341803571342c7d8947263b2caa1"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.4.0",
+      "manifestSha256": "8eee6675c966ff106a340dbe6c1557e22d2ebd2b17f79aa2f6720cf940d28723"
+    },
+    {
+      "name": "@red-cup-engineering/signcell",
+      "version": "0.4.2",
+      "manifestSha256": "90471914a92f00302e045ac6c87fb2cf47ae2bc1d1221f2efc0037c70dc6ffb1"
+    },
+    {
+      "name": "@red-cup-engineering/signchain",
+      "version": "0.4.2-dev.72",
+      "manifestSha256": "7219e1d171886d7a78343078ec0b01b72d452ac2359790a9ab9c4f20585e4482"
+    },
+    {
+      "name": "@red-cup-engineering/signcraft",
+      "version": "0.6.2-dev.522",
+      "manifestSha256": "063174008a0ed3cccb28ee18f2dfbc9479a58752626383e9e786ef76c12708f9"
+    },
+    {
+      "name": "@red-cup-engineering/signgraph",
+      "version": "0.7.1-dev.364",
+      "manifestSha256": "dc0297299db83d02c558b7be724999a66f6e1fc7fc12862e3d04d1eb61abebad"
+    },
+    {
+      "name": "@red-cup-engineering/split-markdown-frontmatter-fence-service",
+      "version": "0.2.0",
+      "manifestSha256": "c7be2b3dd9b4091c38bd14aec2f492b5034b00e52bc0a5a93f82d0c98baea81f"
+    },
+    {
+      "name": "@red-cup-engineering/toml-codec-service",
+      "version": "0.1.3",
+      "manifestSha256": "f5567fb544a5e647122e4f90ea7d30f36b9574003c13f2fc5c92b02fdf9754b0"
+    },
+    {
+      "name": "@red-cup-engineering/toml-file-codec-service",
+      "version": "0.1.1",
+      "manifestSha256": "8c0413c5fda26b96799b781ec433b5b52a6558196f489c715a0633c38ae9370d"
+    },
+    {
+      "name": "@red-cup-engineering/toml-file-codec-service",
+      "version": "0.1.2",
+      "manifestSha256": "4ab0e4e55f91f6792174e53b3fcb4ac60855f0cfff5013db141d3967d5555832"
+    },
+    {
+      "name": "@red-cup-engineering/toml-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "6323acb65022366a30dc3fb03b5b441abf0a77c0cd1bc9c0ada35113f93580eb"
+    },
+    {
+      "name": "@red-cup-engineering/toml-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "69d947fb5474d556def53e673964e8b72bdbb33154ef58337d2de2ac3a2ece29"
+    },
+    {
+      "name": "@red-cup-engineering/transform-json-schema-to-typescript-service",
+      "version": "0.1.0",
+      "manifestSha256": "cab353d18be14aa66bf221e5590a933d26068ff494f9fa6557b70c5b9a4c0cb9"
+    },
+    {
+      "name": "@red-cup-engineering/turtle-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "35854828c3921ecf5fd3038beacf6a896050e2d04d331b3cf82287c057f44dac"
+    },
+    {
+      "name": "@red-cup-engineering/turtle-services-section",
+      "version": "0.1.2",
+      "manifestSha256": "d525f57f9b003d9fe55a6417b455a41a08c8ee6467b3e26d1a0ab7dc70710838"
+    },
+    {
+      "name": "@red-cup-engineering/typed-resource-classification-kernel-service",
+      "version": "0.1.3",
+      "manifestSha256": "9fd6c84e06c77c3a6e28e74d132cbc6431c4eb7260dbe61ec558894046ae0ad1"
+    },
+    {
+      "name": "@red-cup-engineering/uri-services-section",
+      "version": "0.1.1",
+      "manifestSha256": "ad2294be4d435b8c12871d030a5976686259c15579818e1dd1eb84d0f96e1dc4"
+    },
+    {
+      "name": "@red-cup-engineering/web-theming-service",
+      "version": "0.0.5",
+      "manifestSha256": "649ea11550c3a6983d2ef8e32da94e3d2764ccc51430ddd3dbbbe037cccf46a6"
+    },
+    {
+      "name": "@red-cup-engineering/web-theming-service",
+      "version": "0.0.6",
+      "manifestSha256": "51af21da5bfd3ed52ee77b8976ae462c3faadf13a740abcdfd0c32535ba628b6"
+    },
+    {
+      "name": "@red-cup-engineering/web-theming-service",
+      "version": "0.0.7",
+      "manifestSha256": "0d7554d395bea02228244bcde17defd206bef2c6d2a6b208a7c549ac79c2a061"
+    },
+    {
+      "name": "@red-cup-engineering/xml-document-rendering-service",
+      "version": "0.1.7",
+      "manifestSha256": "597b74db020cc96a9b4845b718a15eeaae6816f0462c881345c23e1fdd908634"
+    },
+    {
+      "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+      "version": "0.1.4",
+      "manifestSha256": "2cec0ac45aa2e483338839dcb389ac7a26f4fe73d3b0eb6295a1640c0dd01f1c"
+    },
+    {
+      "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+      "version": "0.1.6",
+      "manifestSha256": "eca55038260c7eef7cd105db33b6b5d725ca19dd7e95f402154d4d545fd776a5"
+    },
+    {
+      "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+      "version": "0.1.7",
+      "manifestSha256": "becb8f2abd0d4109c7401d3015cc471b8168c8d72ae2042b9973da63cc0568fb"
+    },
+    {
+      "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+      "version": "0.1.8",
+      "manifestSha256": "2ec90d421a2cb993291c246fee9abb57bd772de180dde6dea6302c225c412c4a"
+    },
+    {
+      "name": "@rgrove/parse-xml",
+      "version": "5.0.0",
+      "manifestSha256": "51e9c3092d42a62e58375eba4369992b59b7e23d3f60a8b27da0da759bf16b75"
+    },
+    {
+      "name": "@scure/base",
+      "version": "2.4.0",
+      "manifestSha256": "0e74f731adcd5e84bb62b7e154047b585686ff70f64435d2e064b66452d2841a"
+    },
+    {
+      "name": "cbor2",
+      "version": "2.4.0",
+      "manifestSha256": "e60ccbee716aa4cf3c51f1ffc860305cd4b713a02877f772b112c7e912f2d4ba"
+    },
+    {
+      "name": "content-type",
+      "version": "1.0.5",
+      "manifestSha256": "bd78a5427ffca1966621301edc6cac2146c8c1e137f122161ba90dca7ec89f77"
+    },
+    {
+      "name": "entities",
+      "version": "8.1.0",
+      "manifestSha256": "b6ff1175be0fa103f032d52e42af95d95c674e3cba08d93670cc8944697bcc42"
+    },
+    {
+      "name": "http-structured-fields",
+      "version": "1.0.0",
+      "manifestSha256": "047c6eeee34453050a94b91b6208e1e5368593e0d7cb115ec9ca34c19dbd3ab7"
+    },
+    {
+      "name": "idn-hostname",
+      "version": "15.1.19",
+      "manifestSha256": "132d3bb088686c81f937e133424014b4f92177b642c78eff32e15ca0b1f0388c"
+    },
+    {
+      "name": "just-curry-it",
+      "version": "5.3.0",
+      "manifestSha256": "1f5e5926db3f50057a5ab02f536032da95576c5bc04f304302170284892fdc90"
+    },
+    {
+      "name": "parse5",
+      "version": "8.0.1",
+      "manifestSha256": "159187fd5c0c0c17456282f4cf7beab91eb46dfc717928522938c947007282b7"
+    },
+    {
+      "name": "punycode",
+      "version": "2.3.1",
+      "manifestSha256": "e025033bd11110af671fb8eb62f0db8895073ccdca70b596aa94a27eb5bf9acb"
+    },
+    {
+      "name": "rdf-canonize",
+      "version": "5.0.0",
+      "manifestSha256": "4fea40db683ef464ac7e36227d7c80e7076b6dc92e262c9d342058e4b1cf36cf"
+    },
+    {
+      "name": "setimmediate",
+      "version": "1.0.5",
+      "manifestSha256": "56c7968c8062ad56e94b8ddb477e514098e0fa34b060aa86b67232fdb12e184d"
+    },
+    {
+      "name": "smol-toml",
+      "version": "1.9.0",
+      "manifestSha256": "0e35bde6992fef675058596ea0e94c2d3ca65e5f9b73a326d94208be6210f192"
+    },
+    {
+      "name": "uuid",
+      "version": "14.0.3",
+      "manifestSha256": "da6bb61e393eb364b83daab9e897e88acbf4c32e7d1d2af20597cbeff866b429"
+    },
+    {
+      "name": "whatwg-mimetype",
+      "version": "5.0.0",
+      "manifestSha256": "8f3f428034995a3424b3e6ebaf7a38899e556337bd1016734149cfb73035a7c6"
+    },
+    {
+      "name": "xml-name-validator",
+      "version": "5.0.0",
+      "manifestSha256": "08d74267200473a56d572d7453324e896d98150077c9af7e9efb73faaf447de6"
+    },
+    {
+      "name": "yaml",
+      "version": "2.9.0",
+      "manifestSha256": "20b8b197cbd10dad245d45e463dfe58e4c8c25a47e24bc4256ad9ab58bf35683"
+    },
+    {
+      "name": "yaml",
+      "version": "2.9.1",
+      "manifestSha256": "1c6441703d8204a23ded0d37ddf57c3b69d821dc392f20852d1f605bb9b8861c"
+    }
+  ]
+}
