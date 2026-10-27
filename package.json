@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/software-solve-loop-service",
-  "version": "0.1.0",
+  "version": "0.1.1-dev.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/software-solve-loop-service.git"
