@@ -129,6 +129,6 @@ the software protocol, not production customer acceptance.
   source, verification, installation, and independent receiving are distinct.
   https://github.com/red-cup-engineering/engineering-services-section/issues/137
 - Original Requirement shape and exact condition preservation:
-  https://github.com/red-cup-engineering/specification-engineering-services-section/pull/2
+  https://github.com/red-cup-engineering/engineering-content-engineering-services-section/pull/2
 - PROV-O: https://www.w3.org/TR/prov-o/
 - Schema.org source-code type: https://schema.org/SoftwareSourceCode
