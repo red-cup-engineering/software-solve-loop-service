@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { SolveEvidence, requirementCut } from '../src/evidence.mjs';
 import { solveLoop } from '../src/solve-loop.mjs';
-import { cell, coincides, semanticId } from '@red-cup-engineering/signcraft/cell';
+import { cell, coincides, semanticId } from '@red-cup-engineering/signcell/cell';
 
 const requirement = Object.freeze({kind: 'requirement', id: 'r', 'met-when': [
   Object.freeze({cell: 'r:c', target: 'held', says: 'exact behavior'}),

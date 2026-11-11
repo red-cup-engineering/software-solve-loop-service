@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { createHash } from "node:crypto";
-import { cell } from "@red-cup-engineering/signcraft/cell";
+import { cell } from "@red-cup-engineering/signcell/cell";
 import { solveLoop } from "../src/solve-loop.mjs";
 
 test("a real changed module is tested, denied, restored, regenerated and independently received", async () => {

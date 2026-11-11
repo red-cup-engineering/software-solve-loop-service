@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { solveLoop as nativeSolveLoop } from "../src/solve-loop.mjs";
-import { semanticId } from "@red-cup-engineering/signcraft/cell";
+import { semanticId } from "@red-cup-engineering/signcell/cell";
 
 const requirement = {kind: "requirement", id: "compile-exact", "met-when": [
   {cell: "compile-exact:behavior", target: "held", says: "produce the required program behavior"},

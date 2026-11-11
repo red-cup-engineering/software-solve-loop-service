@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { cell, coincides, measured, semanticId } from "@red-cup-engineering/signcraft/cell";
+import { cell, coincides, measured, semanticId } from "@red-cup-engineering/signcell/cell";
 import { settlementAdmits } from "@red-cup-engineering/signcraft/settle";
 import { solveLoop } from "../src/solve-loop.mjs";
 import { SolveEvidence, requirementCut } from "../src/evidence.mjs";
@@ -33,7 +33,7 @@ test("passing tests produce native evidence and verification, never acceptance",
   assert.equal(result.assessment.state, "unknown");
   assert.equal(settlementAdmits(result.settlement).admitted, true);
   assert.ok(result.cells.length > 0);
-  assert.ok(result.cells.every(measured));
+  assert.ok(result.cells.every(value => measured(value)));
   assert.equal(result.log, undefined, "the native graph replaces the opaque log");
 });
 

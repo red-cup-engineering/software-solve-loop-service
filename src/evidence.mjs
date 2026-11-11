@@ -1,6 +1,6 @@
 import { KnowledgeBase } from "@red-cup-engineering/signcraft/knowledge-base";
 import { admitCell, cell, cellSet, cellSetAddress, coincides, measured, retainedCarrier,
-  sectionReading, selectCellSet, semanticId } from "@red-cup-engineering/signcraft/cell";
+  sectionReading, selectCellSet, semanticId } from "@red-cup-engineering/signcell/cell";
 
 // Hosts retaining a receiving envelope must use this same selected Cell owner.
 export { retainedCarrier };
@@ -73,7 +73,7 @@ export class SolveEvidence {
   }
 
   add(input) {
-    const cells = [...input].map(admitCell);
+    const cells = [...input].map(value => admitCell(value));
     KnowledgeBase.fromCells(cells); // whole-cut admission before changing state
     const joined = cellSet([...this.#cells, ...cells]);
     if (cellSetAddress(joined) === cellSetAddress(this.#cells)) return;
@@ -116,7 +116,7 @@ export class SolveEvidence {
         !coincides(receipt.requirement, this.source) || !Array.isArray(receipt.cells))
       throw new TypeError("solve-loop: receipt must name selected receiver and exact candidate/Requirement cut");
     const source = sourceCoordinate({resource: receipt.resource, revision: receipt.revision}, "receipt");
-    const cells = receipt.cells.map(admitCell);
+    const cells = receipt.cells.map(value => admitCell(value));
     const conditionIds = new Set(this.requirement["met-when"].map(c => c.cell));
     if (cells.some(at => !coincides(at.subject, candidate) ||
         !coincides(at.object, this.source) || !conditionIds.has(at.predicate)))

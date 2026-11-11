@@ -1,5 +1,5 @@
 // Effects belong to the host. Source knowledge and settlement use SignCraft.
-import { coincides } from "@red-cup-engineering/signcraft/cell";
+import { coincides } from "@red-cup-engineering/signcell/cell";
 import { selectResolver } from "./resolvers.mjs";
 import { SolveEvidence, sourceCoordinate } from "./evidence.mjs";
 

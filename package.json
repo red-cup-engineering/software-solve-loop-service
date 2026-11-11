@@ -12,8 +12,9 @@
     "./evidence": "./src/evidence.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/javascript-node-services-section": "0.4.1",
-    "@red-cup-engineering/signcraft": "0.6.2-dev.522"
+    "@red-cup-engineering/javascript-node-services-section": "^0.4.1",
+    "@red-cup-engineering/signcell": "^0.17.4",
+    "@red-cup-engineering/signcraft": "^0.9.5"
   },
   "scripts": {
     "test": "node --test"
