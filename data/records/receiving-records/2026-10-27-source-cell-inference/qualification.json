@@ -19,7 +19,7 @@
   "scope": "Receive the issued source-Cell inference correction through the original packed solver and its existing receiving contract.",
   "selectedDependencies": {
     "@red-cup-engineering/signcraft": "0.6.2-dev.522",
-    "@red-cup-engineering/javascript-node-services-section": "0.4.1"
+    "@red-cup-engineering/javascript-node-engineering-services-section": "0.4.1"
   },
   "upstream": {
     "sourceCommit": "85dfd1f8593ffbf7468099d355d5914c0418a981",

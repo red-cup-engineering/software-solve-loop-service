@@ -49,7 +49,7 @@
       "manifestSha256": "b3862c31ca535434cd0f369488b11bd519f35fce12b2b9035c8297cbd2a14976"
     },
     {
-      "name": "@red-cup-engineering/cbor-services-section",
+      "name": "@red-cup-engineering/cbor-engineering-services-section",
       "version": "0.1.1",
       "manifestSha256": "e967ffa7703297662ce57efcc05937681f46a75c012c49f17e8c222b7242be49"
     },
@@ -154,42 +154,42 @@
       "manifestSha256": "55fd72504111e58c31d38b7e7a2c915d7ab8746b25ec0906a987b4c6fd279adb"
     },
     {
-      "name": "@red-cup-engineering/csl-json-services-section",
+      "name": "@red-cup-engineering/csl-json-engineering-services-section",
       "version": "0.2.0",
       "manifestSha256": "9aa2c04872532444e22dda9c048d8b571a62a631590f1620f55a7610910bab3f"
     },
     {
-      "name": "@red-cup-engineering/csl-json-services-section",
+      "name": "@red-cup-engineering/csl-json-engineering-services-section",
       "version": "0.2.1",
       "manifestSha256": "9cd9bb1b41f2e541b03343be369d48225bf1fb0ef00f7d69a9e75e14df179ec2"
     },
     {
-      "name": "@red-cup-engineering/csl-json-services-section",
+      "name": "@red-cup-engineering/csl-json-engineering-services-section",
       "version": "0.2.2",
       "manifestSha256": "4258ed59326ea1260ad690682d174d476e05f279785233b64c4769995a492904"
     },
     {
-      "name": "@red-cup-engineering/css-services-section",
+      "name": "@red-cup-engineering/css-engineering-services-section",
       "version": "0.1.1",
       "manifestSha256": "b1b15e2c4c0a2422bad28f66952609a1f3d543678937a070d571c47ec1da7b3f"
     },
     {
-      "name": "@red-cup-engineering/css-services-section",
+      "name": "@red-cup-engineering/css-engineering-services-section",
       "version": "0.1.2",
       "manifestSha256": "2df483ac8de9519bf4fac7e22919dbee1c9f138f68301309c7e264a9d3e495dd"
     },
     {
-      "name": "@red-cup-engineering/css-services-section",
+      "name": "@red-cup-engineering/css-engineering-services-section",
       "version": "0.1.3",
       "manifestSha256": "9b3d5025225ead704ef68efd9f18ebdc31f01c0394bffce1492ff2d6be59e319"
     },
     {
-      "name": "@red-cup-engineering/datom-services-section",
+      "name": "@red-cup-engineering/datom-engineering-services-section",
       "version": "0.1.0",
       "manifestSha256": "e381414a52335f2234f003125c0afc8b1eccd53432de16f120e347d30eb91491"
     },
     {
-      "name": "@red-cup-engineering/datom-services-section",
+      "name": "@red-cup-engineering/datom-engineering-services-section",
       "version": "0.1.1",
       "manifestSha256": "947408551e8a0acaba6cd087e3335e242f8812d7d419fb514f0391ef027ebecf"
     },
@@ -264,12 +264,12 @@
       "manifestSha256": "2ad19367af5931f39ccf511988b9924eff187551ab277e0d26fe317fb281b11c"
     },
     {
-      "name": "@red-cup-engineering/javascript-node-services-section",
+      "name": "@red-cup-engineering/javascript-node-engineering-services-section",
       "version": "0.3.2",
       "manifestSha256": "b9fc01eee9dcea51c3910091eff398f43d6da5b22a5b866c435f44ea4b1b3108"
     },
     {
-      "name": "@red-cup-engineering/javascript-node-services-section",
+      "name": "@red-cup-engineering/javascript-node-engineering-services-section",
       "version": "0.4.1",
       "manifestSha256": "cfa2dc7d197bf8f328806ebcabb70ffd7934b219e794b363c49ed22768c3536b"
     },
@@ -284,17 +284,17 @@
       "manifestSha256": "19fae3c4167132f9e7c1b0dd4cb34ef8a8266c58d8f2e73ea12537f390e08b3e"
     },
     {
-      "name": "@red-cup-engineering/json-schema-services-section",
+      "name": "@red-cup-engineering/json-schema-engineering-services-section",
       "version": "0.5.0",
       "manifestSha256": "e2e9018c1e2b1cf8bb90072932cae24d26f4f9748fad812627a09a8429d1c2e7"
     },
     {
-      "name": "@red-cup-engineering/json-services-section",
+      "name": "@red-cup-engineering/json-engineering-services-section",
       "version": "0.4.0",
       "manifestSha256": "1b5945abba04ed87ad57a2a97586ee03b4742d8539fe43c2fabdec1161c181be"
     },
     {
-      "name": "@red-cup-engineering/jsonl-services-section",
+      "name": "@red-cup-engineering/jsonl-engineering-services-section",
       "version": "0.1.0",
       "manifestSha256": "1ad55396a51c1fa122e2c23d72e2e383d7b17076182261ceca3d0eb2a1576fbf"
     },
@@ -339,7 +339,7 @@
       "manifestSha256": "8dbc510c7b92f74d84048a5d083195ed4f2b2ad0c51312925db421c4774b1793"
     },
     {
-      "name": "@red-cup-engineering/node-process-services-section",
+      "name": "@red-cup-engineering/node-process-engineering-services-section",
       "version": "0.2.2",
       "manifestSha256": "4eaa4f72059022e15a0668495a6640bc46964ee5687bf883ad6c8407d1381b77"
     },
@@ -364,17 +364,17 @@
       "manifestSha256": "4a27f3cc607dcc44627b25139c86e4201d4b596801cf38cbc91c406e96d0079c"
     },
     {
-      "name": "@red-cup-engineering/semiotic-content-address",
+      "name": "@red-cup-engineering/semiotic-content-address-system",
       "version": "0.1.0",
       "manifestSha256": "1f8e557017362609e3dd4028d92fe8f3ccda7b041c2596993e4ac8a781cfc8f7"
     },
     {
-      "name": "@red-cup-engineering/semiotic-content-address",
+      "name": "@red-cup-engineering/semiotic-content-address-system",
       "version": "0.1.1",
       "manifestSha256": "808a818b081125ddaeca3d8022a677150e7bd412ffe30f4fe7f153c596f42f31"
     },
     {
-      "name": "@red-cup-engineering/semiotic-content-address",
+      "name": "@red-cup-engineering/semiotic-content-address-system",
       "version": "0.1.2-dev.31",
       "manifestSha256": "927a9858fa630f0888dac7dc29361dc229e6c082033431d16b0528d4b87db539"
     },
@@ -454,12 +454,12 @@
       "manifestSha256": "4ab0e4e55f91f6792174e53b3fcb4ac60855f0cfff5013db141d3967d5555832"
     },
     {
-      "name": "@red-cup-engineering/toml-services-section",
+      "name": "@red-cup-engineering/toml-engineering-services-section",
       "version": "0.1.1",
       "manifestSha256": "6323acb65022366a30dc3fb03b5b441abf0a77c0cd1bc9c0ada35113f93580eb"
     },
     {
-      "name": "@red-cup-engineering/toml-services-section",
+      "name": "@red-cup-engineering/toml-engineering-services-section",
       "version": "0.1.2",
       "manifestSha256": "69d947fb5474d556def53e673964e8b72bdbb33154ef58337d2de2ac3a2ece29"
     },
@@ -469,12 +469,12 @@
       "manifestSha256": "cab353d18be14aa66bf221e5590a933d26068ff494f9fa6557b70c5b9a4c0cb9"
     },
     {
-      "name": "@red-cup-engineering/turtle-services-section",
+      "name": "@red-cup-engineering/turtle-engineering-services-section",
       "version": "0.1.1",
       "manifestSha256": "35854828c3921ecf5fd3038beacf6a896050e2d04d331b3cf82287c057f44dac"
     },
     {
-      "name": "@red-cup-engineering/turtle-services-section",
+      "name": "@red-cup-engineering/turtle-engineering-services-section",
       "version": "0.1.2",
       "manifestSha256": "d525f57f9b003d9fe55a6417b455a41a08c8ee6467b3e26d1a0ab7dc70710838"
     },
@@ -484,7 +484,7 @@
       "manifestSha256": "9fd6c84e06c77c3a6e28e74d132cbc6431c4eb7260dbe61ec558894046ae0ad1"
     },
     {
-      "name": "@red-cup-engineering/uri-services-section",
+      "name": "@red-cup-engineering/uri-engineering-services-section",
       "version": "0.1.1",
       "manifestSha256": "ad2294be4d435b8c12871d030a5976686259c15579818e1dd1eb84d0f96e1dc4"
     },

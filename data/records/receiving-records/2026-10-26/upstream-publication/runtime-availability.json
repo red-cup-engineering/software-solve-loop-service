@@ -187,7 +187,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/json-schema-services-section",
+      "name": "@red-cup-engineering/json-schema-engineering-services-section",
       "version": "0.5.0",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjson-schema-services-section",
       "at": "2026-10-26T17:16:32.191673+00:00",
@@ -208,7 +208,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/json-services-section",
+      "name": "@red-cup-engineering/json-engineering-services-section",
       "version": "0.4.0",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjson-services-section",
       "at": "2026-10-26T17:16:32.246452+00:00",
@@ -271,7 +271,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/uri-services-section",
+      "name": "@red-cup-engineering/uri-engineering-services-section",
       "version": "0.1.1",
       "url": "https://registry.561.group/@red-cup-engineering%2Furi-services-section",
       "at": "2026-10-26T17:16:32.288243+00:00",
@@ -460,7 +460,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/corpus-census-service",
+      "name": "@red-cup-engineering/corpus-census-computer-knowledge-systems-engineering-services-section",
       "version": "0.1.1",
       "url": "https://registry.561.group/@red-cup-engineering%2Fcorpus-census-service",
       "at": "2026-10-26T17:16:33.112939+00:00",
@@ -649,7 +649,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/javascript-deduplication-services-section",
+      "name": "@red-cup-engineering/javascript-deduplication-engineering-services-section",
       "version": "0.2.5",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjavascript-deduplication-services-section",
       "at": "2026-10-26T17:16:33.351980+00:00",
@@ -670,7 +670,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/javascript-node-services-section",
+      "name": "@red-cup-engineering/javascript-node-engineering-services-section",
       "version": "0.3.2",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjavascript-node-services-section",
       "at": "2026-10-26T17:16:33.398397+00:00",
@@ -712,7 +712,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/javascript-normalization-services-section",
+      "name": "@red-cup-engineering/javascript-normalization-engineering-services-section",
       "version": "0.1.1",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjavascript-normalization-services-section",
       "at": "2026-10-26T17:16:33.405890+00:00",
@@ -733,7 +733,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/jsnode-package-services-section",
+      "name": "@red-cup-engineering/jsnode-package-engineering-services-section",
       "version": "0.5.1-dev.4",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjsnode-package-services-section",
       "at": "2026-10-26T17:16:33.518189+00:00",
@@ -754,7 +754,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/lean-system-services-section",
+      "name": "@red-cup-engineering/computer-proofing-lean-system-services-section",
       "version": "0.2.2",
       "url": "https://registry.561.group/@red-cup-engineering%2Flean-system-services-section",
       "at": "2026-10-26T17:16:33.519209+00:00",
@@ -817,7 +817,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/node-process-services-section",
+      "name": "@red-cup-engineering/node-process-engineering-services-section",
       "version": "0.2.2",
       "url": "https://registry.561.group/@red-cup-engineering%2Fnode-process-services-section",
       "at": "2026-10-26T17:16:33.580971+00:00",
@@ -838,7 +838,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/npm-workspace-publication-service",
+      "name": "@red-cup-engineering/npm-workspace-publication-computer-code-development-systems-engineering-services-section",
       "version": "0.14.0",
       "url": "https://registry.561.group/@red-cup-engineering%2Fnpm-workspace-publication-service",
       "at": "2026-10-26T17:16:33.583560+00:00",
@@ -922,7 +922,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/turtle-services-section",
+      "name": "@red-cup-engineering/turtle-engineering-services-section",
       "version": "0.1.2",
       "url": "https://registry.561.group/@red-cup-engineering%2Fturtle-services-section",
       "at": "2026-10-26T17:16:33.741646+00:00",
@@ -985,7 +985,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/javascript-node-code-fabrication-services-section",
+      "name": "@red-cup-engineering/javascript-node-code-fabrication-engineering-services-section",
       "version": "0.1.1",
       "url": "https://registry.561.group/@red-cup-engineering%2Fjavascript-node-code-fabrication-services-section",
       "at": "2026-10-26T17:16:33.803109+00:00",
@@ -1006,7 +1006,7 @@
     },
     {
       "field": "dependencies",
-      "name": "@red-cup-engineering/communicating-in-english",
+      "name": "@red-cup-engineering/english-language-corpus",
       "version": "0.0.2",
       "url": "https://registry.561.group/@red-cup-engineering%2Fcommunicating-in-english",
       "at": "2026-10-26T17:16:33.806349+00:00",

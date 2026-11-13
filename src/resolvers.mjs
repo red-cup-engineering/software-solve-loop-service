@@ -28,7 +28,7 @@ export function autofixResolver({ name = "repo-autofix", command, matches = () =
       if (!command) return null;
       if (typeof observeCandidate !== "function" || typeof rollback !== "function")
         throw new TypeError("autofix requires source observation and verified rollback providers before execution");
-      const { runCommand } = await import("@red-cup-engineering/javascript-node-services-section/run-sandboxed-command");
+      const { runCommand } = await import("@red-cup-engineering/javascript-node-engineering-services-section/run-sandboxed-command");
       const r = await runCommand(command, { cwd: workdir });
       if (r.code !== 0) throw new Error("autofix failed without verified workspace restoration");
       return { mutated: true, candidate: await observeCandidate(workdir),

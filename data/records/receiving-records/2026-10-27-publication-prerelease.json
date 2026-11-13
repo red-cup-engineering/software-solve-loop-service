@@ -17,7 +17,7 @@
     "candidateManifestSha256": "3ab0e8418fdf9281c2ae113d46dc767e9a53fdd99a285b6cf24f274f21b4f6a5",
     "onlyManifestVersionChanged": true,
     "selectedDependencies": {
-      "@red-cup-engineering/javascript-node-services-section": "0.4.1",
+      "@red-cup-engineering/javascript-node-engineering-services-section": "0.4.1",
       "@red-cup-engineering/signcraft": "0.6.2-dev.522"
     },
     "runtimeSourceChanged": false,
@@ -28,7 +28,7 @@
     "scope": "Original published dependency-declaration policy executed against the source manifest and its version-only candidate; not registry issuance or a new runtime suite.",
     "node": "v24.22.1",
     "issuer": {
-      "package": "@red-cup-engineering/npm-workspace-publication-service",
+      "package": "@red-cup-engineering/npm-workspace-publication-computer-code-development-systems-engineering-services-section",
       "version": "0.14.25-dev.192",
       "gitHead": "9fabd1a28b8e065bfd5a909dc24b05bc807a3bf1",
       "path": "src/dependency-policy.mjs",
@@ -91,7 +91,7 @@
     ],
     "selectedDependencies": {
       "@red-cup-engineering/signcraft": "0.6.2-dev.522",
-      "@red-cup-engineering/javascript-node-services-section": "0.4.1"
+      "@red-cup-engineering/javascript-node-engineering-services-section": "0.4.1"
     },
     "packedArchiveSha256": "22fffc9b0e3186555fd638471bce72d80d947ef8b81de3f0321b345c565bc78f",
     "packedArchiveIntegrity": "sha512-CC5HVeY/umAWV4uFzKNKDDe6cWzvt91NvJXPjENv36ycDjQUtHCznjAl8bTMLj+TgBA62rpny1s4/ZqptbWhRw==",

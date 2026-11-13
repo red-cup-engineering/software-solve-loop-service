@@ -13,7 +13,7 @@
   },
   "installedDirectSuppliers": [
     {
-      "name": "@red-cup-engineering/javascript-node-services-section",
+      "name": "@red-cup-engineering/javascript-node-engineering-services-section",
       "declared": "0.4.1",
       "version": "0.4.1",
       "gitHead": "fc1832ad8350068cdd0246b86b7b174371349ba1"
